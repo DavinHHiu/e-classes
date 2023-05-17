@@ -2,9 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
 :root {
-    --primary: #ff79c6;
+    --primary-color: #ff79c6;
     --black: #282a36;
-    --white: #f8f8f2;
+    --white: #fff;
     --text-color: #333;
 }
 
@@ -23,4 +23,11 @@ body {
     font-size: 1.6rem;
     line-height: 1.5;
     text-rendering: optimizeSpeed;
+}
+
+button,
+input,
+[tabIndex] {
+    border: none;
+    outline: none;
 }

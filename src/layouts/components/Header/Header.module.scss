@@ -1,0 +1,45 @@
+.wrapper {
+    position: sticky;
+    top: 0;
+    left: 0;
+    padding: 0 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.4rem;
+    height: 66px;
+    background-color: var(--white);
+    border-bottom: 1px solid rgb(22 24 35 / .1);
+    z-index: 20;
+}
+
+.logo-container {
+    flex: 30%;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 48px;
+    cursor: pointer;
+}
+
+.slogan {
+    margin-left: 10px;
+    font-weight: 500;
+
+}
+
+.avatar-container {
+    flex: 30%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 999px;
+    object-fit: cover;
+    cursor: pointer;
+}
