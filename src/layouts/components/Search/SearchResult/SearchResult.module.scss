@@ -1,0 +1,39 @@
+.wrapper {
+    width: 100%;
+    font-size: 1.4rem;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 0 12px;
+    border-bottom: 1px solid rgb(22 24 35/.06);
+    margin-bottom: 6px;
+}
+
+.header-title {
+    font-weight: 500;
+}
+
+.more {
+    color: rgb(22 24 35/.5)
+}
+
+.result-item {
+    display: flex;
+    align-items: center;
+    padding: 6px 0;
+    width: 100%;
+    height: 46px;
+}
+
+.result-avatar {
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+    border-radius: 999px;
+}
+
+.result-name {
+    margin-left: 12px;
+}

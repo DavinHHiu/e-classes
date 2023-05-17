@@ -1,5 +1,3 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSearch, faXmark } from '@fortawesome/free-solid-svg-icons';
 import classNames from 'classnames/bind';
 import Search from '../Search/Search';
 import styles from './Header.module.scss';
@@ -19,7 +17,11 @@ function Header() {
             </div>
             <Search />
             <div className={cx('avatar-container')}>
-                <img className={cx('avatar')} src="https://t3.ftcdn.net/jpg/05/70/71/06/360_F_570710660_Jana1ujcJyQTiT2rIzvfmyXzXamVcby8.jpg" />
+                <img
+                    className={cx('avatar')}
+                    src="https://t3.ftcdn.net/jpg/05/70/71/06/360_F_570710660_Jana1ujcJyQTiT2rIzvfmyXzXamVcby8.jpg"
+                    alt=""
+                />
             </div>
         </header>
     );
