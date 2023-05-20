@@ -1,3 +1,16 @@
 .wrapper {
+    margin-top: 50px;
+    position: fixed;
+    left: 0;
+    top: 74px;
     width: 96px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 16px;
+}
+
+@media only screen and (max-width: 63.9375em) {
+    .wrapper {
+        display: none;
+    }
 }

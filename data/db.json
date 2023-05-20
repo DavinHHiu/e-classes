@@ -1,0 +1,157 @@
+{
+    "user": [
+        {
+            "id": 1,
+            "name": "Leanne Graham",
+            "username": "Bret",
+            "email": "Sincere@april.biz",
+            "phone": "(404) 555-3456",
+            "role": "student"
+        },
+        {
+            "id": 2,
+            "name": "Ervin Howell",
+            "username": "Antonette",
+            "email": "Shanna@melissa.tv",
+            "phone": "(617) 555-9012",
+            "role": "student"
+        },
+        {
+            "id": 3,
+            "name": "Clementine Bauch",
+            "username": "Samantha",
+            "email": "Nathan@yesenia.net",
+            "phone": "(212) 555-6789",
+            "role": "student"
+        },
+        {
+            "id": 4,
+            "name": "Patricia Lebsack",
+            "username": "Karianne",
+            "email": "Julianne.OConner@kory.org",
+            "phone": "(786) 555-2345",
+            "role": "student"
+        },
+        {
+            "id": 5,
+            "name": "Chelsey Dietrich",
+            "username": "Kamren",
+            "email": "Lucio_Hettinger@annie.ca",
+            "phone": "(254)954-1289",
+            "role": "student"
+        },
+        {
+            "id": 6,
+            "name": "Mrs. Dennis Schulist",
+            "username": "Leopoldo_Corkery",
+            "email": "Karley_Dach@jasper.info",
+            "phone": "(713) 555-7890",
+            "role": "student"
+        },
+        {
+            "id": 7,
+            "name": "Kurtis Weissnat",
+            "username": "Elwyn.Skiles",
+            "email": "Telly.Hoeger@billy.biz",
+            "phone": "210.067.6132",
+            "role": "student"
+        },
+        {
+            "id": 8,
+            "name": "Nicholas Runolfsdottir V",
+            "username": "Maxime_Nienow",
+            "email": "Sherwood@rosamond.me",
+            "phone": "(415) 555-5678",
+            "role": "student"
+        },
+        {
+            "id": 9,
+            "avatar": "https://t3.ftcdn.net/jpg/05/70/71/06/360_F_570710660_Jana1ujcJyQTiT2rIzvfmyXzXamVcby8.jpg",
+            "name": "Glenna Reichert",
+            "username": "Delphine",
+            "email": "Chaim_McDermott@dana.io",
+            "phone": "(202) 555-0123",
+            "role": "student"
+        },
+        {
+            "id": 10,
+            "name": "Clementina DuBuque",
+            "username": "Moriah.Stanton",
+            "email": "Rey.Padberg@karina.biz",
+            "phone": "024-648-3804",
+            "role": "student"
+        }
+    ],
+    "courses": [
+        {
+            "id": 1,
+            "poster": "https://files.fullstack.edu.vn/f8-prod/courses/7.png",
+            "name": "Khóa học Lập trình căn bản",
+            "description": "",
+            "students-count": ""
+        },
+        {
+            "id": 2,
+            "poster": "https://files.fullstack.edu.vn/f8-prod/courses/7.png",
+            "name": "Khóa học Phân tích và Thiết kế Hệ thống",
+            "description": "",
+            "students-count": ""
+        },
+        {
+            "id": 3,
+            "poster": "https://files.fullstack.edu.vn/f8-prod/courses/7.png",
+            "name": "Khóa học Quản trị Cơ sở dữ liệu",
+            "description": "",
+            "students-count": ""
+        },
+        {
+            "id": 4,
+            "poster": "https://files.fullstack.edu.vn/f8-prod/courses/7.png",
+            "name": "Khóa học Mạng máy tính và An ninh mạng",
+            "description": "",
+            "students-count": ""
+        },
+        {
+            "id": 5,
+            "poster": "https://files.fullstack.edu.vn/f8-prod/courses/7.png",
+            "name": "Khóa học Phát triển Ứng dụng Di động",
+            "description": "",
+            "students-count": ""
+        },
+        {
+            "id": 6,
+            "poster": "https://files.fullstack.edu.vn/f8-prod/courses/7.png",
+            "name": "Khóa học Trí tuệ nhân tạo",
+            "description": "",
+            "students-count": ""
+        },
+        {
+            "id": 7,
+            "poster": "https://files.fullstack.edu.vn/f8-prod/courses/7.png",
+            "name": "Khóa học Thiết kế Đồ họa và Đa phương tiện",
+            "description": "",
+            "students-count": ""
+        },
+        {
+            "id": 8,
+            "poster": "https://files.fullstack.edu.vn/f8-prod/courses/7.png",
+            "name": "Khóa học Quản lý Dự án Công nghệ thông tin",
+            "description": "",
+            "students-count": ""
+        },
+        {
+            "id": 9,
+            "poster": "https://files.fullstack.edu.vn/f8-prod/courses/7.png",
+            "name": "Khóa học An toàn thông tin",
+            "description": "",
+            "students-count": ""
+        },
+        {
+            "id": 10,
+            "poster": "https://files.fullstack.edu.vn/f8-prod/courses/7.png",
+            "name": "Khóa học Trực tuyến về Công nghệ Blockchain",
+            "description": "",
+            "students-count": ""
+        }
+    ]
+}

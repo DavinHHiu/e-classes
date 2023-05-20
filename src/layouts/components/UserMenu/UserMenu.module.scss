@@ -1,0 +1,40 @@
+.menu-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 8px 24px;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+}
+
+.avatar {
+    margin: 10px 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 12px;
+}
+
+.full-name {
+    font-size: 1.6rem;
+}
+
+hr {
+    margin: 8px 0;
+    border: none;
+    border-top: 1px solid rgb(22 24 35/.06);
+    box-sizing: content-box;
+}
+
+.item {
+    display: block;
+    padding: 10px 0;
+}

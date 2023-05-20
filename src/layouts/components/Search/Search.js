@@ -10,7 +10,7 @@ import styles from './Search.module.scss';
 
 const cx = classNames.bind(styles);
 
-function Search() {
+function Search({ className }) {
     const [searchValue, setSearchValue] = useState('');
     const inputRef = useRef();
 
@@ -41,7 +41,7 @@ function Search() {
                 </div>
             )}
         >
-            <div className={cx('search')}>
+            <div className={cx('search', className)}>
                 <button className={cx('search-btn')}>
                     <FontAwesomeIcon icon={faSearch} />
                 </button>

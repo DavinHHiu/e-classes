@@ -9,12 +9,12 @@
     font-size: 1.4rem;
     height: 66px;
     background-color: var(--white);
-    border-bottom: 1px solid rgb(22 24 35 / .1);
+    border-bottom: 1px solid rgb(22 24 35 / 0.1);
     z-index: 20;
 }
 
 .logo-container {
-    flex: 30%;
+    flex-basis: 40%;
     display: flex;
     align-items: center;
 }
@@ -27,13 +27,21 @@
 .slogan {
     margin-left: 10px;
     font-weight: 500;
+}
 
+.more-btn,
+.search-btn {
+    display: none;
+    flex-basis: 30%;
+    font-size: 20px;
+    color: rgb(22 24 35 /0.6);
 }
 
 .avatar-container {
-    flex: 30%;
+    flex-basis: 30%;
     display: flex;
     justify-content: flex-end;
+    align-items: center;
 }
 
 .avatar {
@@ -43,3 +51,38 @@
     object-fit: cover;
     cursor: pointer;
 }
+
+//Tablet and Phone: width: < 1024px
+@media only screen and (max-width: 63.9375em) {
+    .logo-container {
+        display: none;
+    }
+    .more-btn {
+        display: flex;
+    }
+}
+
+//Phone: width < 740px
+@media only screen and (max-width: 46.1875em) {
+    .wrapper {
+        padding: 0 16px;
+    }
+
+    .search-container {
+        display: none;
+    }
+
+    .avatar-container {
+        flex-basis: 0;
+        gap: 20px;
+    }
+
+    .search-btn {
+        display: flex;
+    }
+}
+
+//Tablet: width >= 740px and width < 1024px
+// @media only screen and (min-width: 46.25em) and (max-width: 63.9375) {
+    
+// }

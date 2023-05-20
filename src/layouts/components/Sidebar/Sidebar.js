@@ -1,10 +1,18 @@
+import { faHome, faSchool } from '@fortawesome/free-solid-svg-icons';
 import classNames from 'classnames/bind'
+
+import Menu from './Menu/Menu';
+import MenuItem from './Menu/MenuItem';
 import styles from './Sidebar.module.scss'
+import config from '~/config';
 
 const cx = classNames.bind(styles);
 function Sidebar() {
     return <aside className={cx('wrapper')}>
-        <h2>Side bar</h2>
+        <Menu>
+            <MenuItem title="Home" icon={faHome} to={config.path.home}></MenuItem>
+            <MenuItem title="Classes" icon={faSchool} to={config.path.classes}></MenuItem>
+        </Menu>
     </aside>;
 }
 

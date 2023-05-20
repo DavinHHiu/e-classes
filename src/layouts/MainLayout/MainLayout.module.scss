@@ -10,5 +10,14 @@
 
 .content {
     flex: 1;
-    max-width: calc(100% - 96px);
+    width: 100%;
+    margin-left: 96px;
+    max-width: calc(100%);
+}
+
+@media (max-width: 1023px) {
+    .content {
+        max-width: 100%;
+        margin-left: 0;
+    }
 }

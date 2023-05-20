@@ -1,5 +1,10 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars, faSearch } from '@fortawesome/free-solid-svg-icons';
 import classNames from 'classnames/bind';
+import Tippy from '@tippyjs/react/headless';
+
 import Search from '../Search/Search';
+import UserMenu from '../UserMenu/UserMenu';
 import styles from './Header.module.scss';
 
 const cx = classNames.bind(styles);
@@ -7,6 +12,9 @@ const cx = classNames.bind(styles);
 function Header() {
     return (
         <header className={cx('wrapper')}>
+            <div className={cx('more-btn')}>
+                <FontAwesomeIcon icon={faBars} />
+            </div>
             <div className={cx('logo-container')}>
                 <img
                     className={cx('logo')}
@@ -15,13 +23,20 @@ function Header() {
                 />
                 <span className={cx('slogan')}>Eclasses - Learning every moments</span>
             </div>
-            <Search />
+
+            <Search className={cx('search-container')} />
+
             <div className={cx('avatar-container')}>
-                <img
-                    className={cx('avatar')}
-                    src="https://t3.ftcdn.net/jpg/05/70/71/06/360_F_570710660_Jana1ujcJyQTiT2rIzvfmyXzXamVcby8.jpg"
-                    alt=""
-                />
+                <div className={cx('search-btn')}>
+                    <FontAwesomeIcon icon={faSearch} />
+                </div>
+                <Tippy placement="bottom" offset={[-110, 10]} interactive render={() => <UserMenu />}>
+                    <img
+                        className={cx('avatar')}
+                        src="https://w7.pngwing.com/pngs/867/134/png-transparent-giant-panda-dog-cat-avatar-fox-animal-tag-mammal-animals-carnivoran-thumbnail.png"
+                        alt=""
+                    />
+                </Tippy>
             </div>
         </header>
     );
