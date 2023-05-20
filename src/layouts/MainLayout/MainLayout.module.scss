@@ -11,7 +11,9 @@
 .content {
     flex: 1;
     width: 100%;
+    margin-top: 70px;
     margin-left: 96px;
+    padding: 0 40px 0 20px;
     max-width: calc(100%);
 }
 
@@ -19,5 +21,12 @@
     .content {
         max-width: 100%;
         margin-left: 0;
+        padding: 0 32px;
+    }
+}
+
+@media (min-width: 0) and (max-width: 739px) {
+    .content {
+        padding: 0 16px;
     }
 }

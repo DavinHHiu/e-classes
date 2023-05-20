@@ -81,17 +81,31 @@
 }
 
 .icon-search {
+    position: absolute;
     font-size: 1.4rem;
     color: rgb(22 24 35 /0.5);
-    margin-right: 8px;
 }
 
-.icon-loadding {
+.icon-loading {
     position: absolute;
     left: 0;
-    top: 0;
+    top: 50%;
+    color: rgb(22 24 35 /0.5);
+    font-size: 1.2rem;
+
+    animation: spinner 1s linear infinite;
+}
+
+@keyframes spinner {
+    from {
+        transform: translateY(-50%) rotate(0);
+    }
+    to {
+        transform: translateY(-50%) rotate(360deg);
+    }
 }
 
 .input-value {
     color: rgb(22 24 35 /0.5);
+    margin-left: 25px;
 }

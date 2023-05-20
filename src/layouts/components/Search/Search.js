@@ -15,31 +15,40 @@ function Search({ className }) {
     const [searchResult, setSearchResult] = useState([]);
     const [showResult, setShowResult] = useState(true);
     const [loading, setLoading] = useState(false);
-    let result = useRef();
+    const [dataAPI, setDataAPI] = useState([]);
+
     const inputRef = useRef();
 
     useEffect(() => {
         fetch(`http://localhost:3004/courses`)
             .then((res) => res.json())
             .then((res) => {
-                result.current = [...res];
+                setDataAPI(res);
             });
     }, []);
 
     useEffect(() => {
+        if (!searchValue.trim()) {
+            setSearchResult([]);
+            return;
+        }
         setLoading(true);
         // eslint-disable-next-line no-lone-blocks
         {
-            result.current &&
+            dataAPI &&
                 setSearchResult(
-                    result.current.filter((item) => item.name.toUpperCase().includes(searchValue.toUpperCase())),
+                    dataAPI.filter((item) => item.name.toUpperCase().includes(searchValue.toUpperCase())),
                 );
         }
+
         setLoading(false);
     }, [searchValue]);
 
     const handleOnChange = (e) => {
-        setSearchValue(e.target.value);
+        const searchValue = e.target.value;
+        if (!searchValue.startsWith(' ')) {
+            setSearchValue(e.target.value);
+        }
     };
 
     const handleClear = () => {
@@ -54,15 +63,15 @@ function Search({ className }) {
     return (
         <div>
             <Tippy
-                visible={showResult && searchValue && searchResult.length > 0}
+                visible={showResult && searchResult.length > 0}
                 interactive
                 placement="bottom"
                 render={() => (
                     <div className={cx('search-results')}>
                         <PopperWrapper className={cx('search-wrapper')}>
                             <div className={cx('search-filter')}>
-                                <FontAwesomeIcon className={cx('icon-search')} icon={faSearch} />
-                                <FontAwesomeIcon className={cx('icon-loading')} icon={faSpinner} />
+                                {!loading && <FontAwesomeIcon className={cx('icon-search')} icon={faSearch} />}
+                                {loading && <FontAwesomeIcon className={cx('icon-loading')} icon={faSpinner} />}
                                 <span className={cx('input-value')}>Kết quả cho '{searchValue}'</span>
                             </div>
                             <SearchReSult result={searchResult} />
