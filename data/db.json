@@ -1,12 +1,14 @@
 {
-    "user": [
+    "users": [
         {
             "id": 1,
             "name": "Leanne Graham",
             "username": "Bret",
             "email": "Sincere@april.biz",
             "phone": "(404) 555-3456",
-            "role": "student"
+            "role": "student",
+            "courseManageIds": [],
+            "courseJoinIds": []
         },
         {
             "id": 2,
@@ -14,7 +16,9 @@
             "username": "Antonette",
             "email": "Shanna@melissa.tv",
             "phone": "(617) 555-9012",
-            "role": "student"
+            "role": "student",
+            "courseManageIds": [],
+            "courseJoinIds": []
         },
         {
             "id": 3,
@@ -22,7 +26,9 @@
             "username": "Samantha",
             "email": "Nathan@yesenia.net",
             "phone": "(212) 555-6789",
-            "role": "student"
+            "role": "student",
+            "courseManageIds": [],
+            "courseJoinIds": []
         },
         {
             "id": 4,
@@ -30,7 +36,9 @@
             "username": "Karianne",
             "email": "Julianne.OConner@kory.org",
             "phone": "(786) 555-2345",
-            "role": "student"
+            "role": "student",
+            "courseManageIds": [],
+            "courseJoinIds": []
         },
         {
             "id": 5,
@@ -38,7 +46,9 @@
             "username": "Kamren",
             "email": "Lucio_Hettinger@annie.ca",
             "phone": "(254)954-1289",
-            "role": "student"
+            "role": "student",
+            "courseManageIds": [],
+            "courseJoinIds": []
         },
         {
             "id": 6,
@@ -46,7 +56,9 @@
             "username": "Leopoldo_Corkery",
             "email": "Karley_Dach@jasper.info",
             "phone": "(713) 555-7890",
-            "role": "student"
+            "role": "student",
+            "courseManageIds": [],
+            "courseJoinIds": []
         },
         {
             "id": 7,
@@ -54,7 +66,9 @@
             "username": "Elwyn.Skiles",
             "email": "Telly.Hoeger@billy.biz",
             "phone": "210.067.6132",
-            "role": "student"
+            "role": "student",
+            "courseManageIds": [],
+            "courseJoinIds": []
         },
         {
             "id": 8,
@@ -62,7 +76,9 @@
             "username": "Maxime_Nienow",
             "email": "Sherwood@rosamond.me",
             "phone": "(415) 555-5678",
-            "role": "student"
+            "role": "student",
+            "courseManageIds": [],
+            "courseJoinIds": []
         },
         {
             "id": 9,
@@ -71,7 +87,9 @@
             "username": "Delphine",
             "email": "Chaim_McDermott@dana.io",
             "phone": "(202) 555-0123",
-            "role": "student"
+            "role": "student",
+            "courseManageIds": [],
+            "courseJoinIds": []
         },
         {
             "id": 10,
@@ -79,7 +97,9 @@
             "username": "Moriah.Stanton",
             "email": "Rey.Padberg@karina.biz",
             "phone": "024-648-3804",
-            "role": "student"
+            "role": "student",
+            "courseManageIds": [],
+            "courseJoinIds": []
         }
     ],
     "courses": [
@@ -88,70 +108,121 @@
             "poster": "https://files.fullstack.edu.vn/f8-prod/courses/7.png",
             "name": "Khóa học Lập trình căn bản",
             "description": "",
-            "students-count": ""
+            "students-count": "",
+            "code": "",
+            "exerciseIds": [],
+            "userManagerId": "",
+            "studentIds": []
         },
         {
             "id": 2,
             "poster": "https://files.fullstack.edu.vn/f8-prod/courses/7.png",
             "name": "Khóa học Phân tích và Thiết kế Hệ thống",
             "description": "",
-            "students-count": ""
+            "students-count": "",
+            "code": "",
+            "exerciseIds": [],
+            "userManagerId": "",
+            "studentIds": []
         },
         {
             "id": 3,
             "poster": "https://files.fullstack.edu.vn/f8-prod/courses/7.png",
             "name": "Khóa học Quản trị Cơ sở dữ liệu",
             "description": "",
-            "students-count": ""
+            "students-count": "",
+            "code": "",
+            "exerciseIds": [],
+            "userManagerId": "",
+            "studentIds": []
         },
         {
             "id": 4,
             "poster": "https://files.fullstack.edu.vn/f8-prod/courses/7.png",
             "name": "Khóa học Mạng máy tính và An ninh mạng",
             "description": "",
-            "students-count": ""
+            "students-count": "",
+            "code": "",
+            "exerciseIds": [],
+            "userManagerId": "",
+            "studentIds": []
         },
         {
             "id": 5,
             "poster": "https://files.fullstack.edu.vn/f8-prod/courses/7.png",
             "name": "Khóa học Phát triển Ứng dụng Di động",
             "description": "",
-            "students-count": ""
+            "students-count": "",
+            "code": "",
+            "exerciseIds": [],
+            "userManagerId": "",
+            "studentIds": []
         },
         {
             "id": 6,
             "poster": "https://files.fullstack.edu.vn/f8-prod/courses/7.png",
             "name": "Khóa học Trí tuệ nhân tạo",
             "description": "",
-            "students-count": ""
+            "students-count": "",
+            "code": "",
+            "exerciseIds": [],
+            "userManagerId": "",
+            "studentIds": []
         },
         {
             "id": 7,
             "poster": "https://files.fullstack.edu.vn/f8-prod/courses/7.png",
             "name": "Khóa học Thiết kế Đồ họa và Đa phương tiện",
             "description": "",
-            "students-count": ""
+            "students-count": "",
+            "code": "",
+            "exerciseIds": [],
+            "userManagerId": "",
+            "studentIds": []
         },
         {
             "id": 8,
             "poster": "https://files.fullstack.edu.vn/f8-prod/courses/7.png",
             "name": "Khóa học Quản lý Dự án Công nghệ thông tin",
             "description": "",
-            "students-count": ""
+            "students-count": "",
+            "code": "",
+            "exerciseIds": [],
+            "userManagerId": "",
+            "studentIds": []
         },
         {
             "id": 9,
             "poster": "https://files.fullstack.edu.vn/f8-prod/courses/7.png",
             "name": "Khóa học An toàn thông tin",
             "description": "",
-            "students-count": ""
+            "students-count": "",
+            "code": "",
+            "exerciseIds": [],
+            "userManagerId": "",
+            "studentIds": []
         },
         {
             "id": 10,
             "poster": "https://files.fullstack.edu.vn/f8-prod/courses/7.png",
             "name": "Khóa học Trực tuyến về Công nghệ Blockchain",
             "description": "",
-            "students-count": ""
+            "students-count": "",
+            "code": "",
+            "exerciseIds": [],
+            "userManagerId": "",
+            "studentIds": []
+        }
+    ],
+    "excercises": [
+        {
+            "id": 1,
+            "name": "",
+            "description": "",
+            "type": "",
+            "score": "",
+            "postDate": "",
+            "deadline": ""
         }
     ]
 }

@@ -12,13 +12,15 @@
     font-size: 1.6rem;
     border: 2px solid rgb(22 24 35/0.12);
     border-radius: 999px;
+    transition: all 0.3s ease-in-out;
 
     &:focus-within {
-        border: 2px solid rgb(22 24 35/0.6);
+        border: 2px solid rgb(22 24 35/0.75);
     }
 
-    input:not(:placeholder-shown) ~ .search-btn {
+    input:not(:placeholder-shown) .search-icon {
         color: red;
+        background-color: red;
     }
 }
 
@@ -73,6 +75,7 @@
 }
 
 .search-filter {
+    position: relative;
     display: flex;
     align-items: center;
 }
@@ -81,6 +84,12 @@
     font-size: 1.4rem;
     color: rgb(22 24 35 /0.5);
     margin-right: 8px;
+}
+
+.icon-loadding {
+    position: absolute;
+    left: 0;
+    top: 0;
 }
 
 .input-value {

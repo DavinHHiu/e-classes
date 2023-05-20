@@ -1,1 +1,2 @@
-npx json-server --watch data/db.json: run server
+//: run server
+npx json-server --watch data/db.json --port 3004

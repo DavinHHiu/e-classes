@@ -5,14 +5,14 @@ import ResultItem from './ResultItem';
 
 const cx = classNames.bind(styles);
 
-function SearchReSult() {
+function SearchReSult({ result }) {
     return (
         <div className={cx('wrapper')}>
             <Header />
             <div className={cx('body')}>
-                <ResultItem />
-                <ResultItem />
-                <ResultItem />
+                {result.map(item => (
+                    <ResultItem key={item.id} poster={item.poster} name={item.name} />
+                ))}
             </div>
         </div>
     );

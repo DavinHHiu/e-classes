@@ -3,15 +3,15 @@ import styles from './SearchResult.module.scss';
 
 const cx = classNames.bind(styles);
 
-function ResultItem({ avatar, name }) {
+function ResultItem({ poster, name }) {
     return (
         <div className={cx('result-item')}>
             <img
                 className={cx('result-avatar')}
-                src="https://files.fullstack.edu.vn/f8-prod/courses/13/13.png"
-                alt=""
+                src={poster}
+                alt={name}
             />
-            <span className={cx('result-name')}>Xây dựng Website với ReacJS</span>
+            <span className={cx('result-name')}>{name}</span>
         </div>
     );
 }

@@ -1,6 +1,6 @@
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSearch, faXmark } from '@fortawesome/free-solid-svg-icons';
+import { faSearch, faSpinner, faXmark } from '@fortawesome/free-solid-svg-icons';
 import Tippy from '@tippyjs/react/headless';
 import classNames from 'classnames/bind';
 
@@ -12,54 +12,86 @@ const cx = classNames.bind(styles);
 
 function Search({ className }) {
     const [searchValue, setSearchValue] = useState('');
+    const [searchResult, setSearchResult] = useState([]);
+    const [showResult, setShowResult] = useState(true);
+    const [loading, setLoading] = useState(false);
+    let result = useRef();
     const inputRef = useRef();
+
+    useEffect(() => {
+        fetch(`http://localhost:3004/courses`)
+            .then((res) => res.json())
+            .then((res) => {
+                result.current = [...res];
+            });
+    }, []);
+
+    useEffect(() => {
+        setLoading(true);
+        // eslint-disable-next-line no-lone-blocks
+        {
+            result.current &&
+                setSearchResult(
+                    result.current.filter((item) => item.name.toUpperCase().includes(searchValue.toUpperCase())),
+                );
+        }
+        setLoading(false);
+    }, [searchValue]);
 
     const handleOnChange = (e) => {
         setSearchValue(e.target.value);
     };
 
-    const handleClick = () => {
+    const handleClear = () => {
         setSearchValue('');
         inputRef.current.focus();
     };
 
+    const handleHideResult = () => {
+        setShowResult(false);
+    };
+
     return (
-        <Tippy
-            interactive
-            placement="bottom"
-            render={() => (
-                <div className={cx('search-results')}>
-                    <PopperWrapper className={cx('search-wrapper')}>
-                        <div className={cx('search-filter')}>
-                            <FontAwesomeIcon className={cx('icon-search')} icon={faSearch} />
-                            <span className={cx('input-value')}>Kết quả cho '{searchValue}'</span>
-                        </div>
-                        <SearchReSult />
-                        <SearchReSult />
-                        <SearchReSult />
-                    </PopperWrapper>
-                </div>
-            )}
-        >
-            <div className={cx('search', className)}>
-                <button className={cx('search-btn')}>
-                    <FontAwesomeIcon icon={faSearch} />
-                </button>
-                <input
-                    ref={inputRef}
-                    value={searchValue}
-                    className={cx('search-input')}
-                    placeholder="Tìm kiếm lớp học, giảng viên, ..."
-                    spellCheck={false}
-                    onChange={handleOnChange}
-                ></input>
-                {searchValue && (
-                    <button className={cx('clear-btn')} onClick={handleClick}>
-                        <FontAwesomeIcon icon={faXmark} />
-                    </button>
+        <div>
+            <Tippy
+                visible={showResult && searchValue && searchResult.length > 0}
+                interactive
+                placement="bottom"
+                render={() => (
+                    <div className={cx('search-results')}>
+                        <PopperWrapper className={cx('search-wrapper')}>
+                            <div className={cx('search-filter')}>
+                                <FontAwesomeIcon className={cx('icon-search')} icon={faSearch} />
+                                <FontAwesomeIcon className={cx('icon-loading')} icon={faSpinner} />
+                                <span className={cx('input-value')}>Kết quả cho '{searchValue}'</span>
+                            </div>
+                            <SearchReSult result={searchResult} />
+                        </PopperWrapper>
+                    </div>
                 )}
-            </div>
-        </Tippy>
+                onClickOutside={handleHideResult}
+            >
+                <div className={cx('search', className)}>
+                    <button className={cx('search-btn')}>
+                        <FontAwesomeIcon className={cx('search-icon')} icon={faSearch} />
+                    </button>
+                    <input
+                        ref={inputRef}
+                        value={searchValue}
+                        className={cx('search-input')}
+                        placeholder="Tìm kiếm lớp học, giảng viên, ..."
+                        spellCheck={false}
+                        onChange={handleOnChange}
+                        onFocus={() => setShowResult(true)}
+                    ></input>
+                    {!!searchValue && (
+                        <button className={cx('clear-btn')} onClick={handleClear}>
+                            <FontAwesomeIcon icon={faXmark} />
+                        </button>
+                    )}
+                </div>
+            </Tippy>
+        </div>
     );
 }
 
