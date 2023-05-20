@@ -6,7 +6,7 @@ const cx = classNames.bind(styles);
 
 function ResultItem({ poster, name }) {
     return (
-        <Link to="/" className={cx('result-item')}>
+        <Link to="/search" className={cx('result-item')}>
             <img className={cx('result-avatar')} src={poster} alt={name} />
             <span className={cx('result-name')}>{name}</span>
         </Link>
