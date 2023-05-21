@@ -11,7 +11,7 @@ function SearchReSult({ result }) {
             <Header />
             <div className={cx('body')}>
                 {result.map(item => (
-                    <ResultItem     key={item.id} poster={item.poster} name={item.name} />
+                    <ResultItem key={item.id} poster={item.poster} name={item.name} />
                 ))}
             </div>
         </div>

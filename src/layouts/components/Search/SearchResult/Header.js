@@ -7,7 +7,7 @@ const cx = classNames.bind(styles);
 function Header() {
     return <div className={cx('header')}>
         <span className={cx('header-title')}>LỚP HỌC</span>
-        <Link className={cx('more')} to="">Xem thêm</Link>
+        <Link className={cx('more')} to="/search">Xem thêm</Link>
     </div>;
 }
 

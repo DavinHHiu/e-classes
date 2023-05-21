@@ -3,6 +3,7 @@ import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import { useEffect, useState } from 'react';
 import classNames from 'classnames/bind';
 
+import request from '~/utils/request';
 import Button from '~/components/Button/Button';
 import CourseItem from '~/components/CourseItem/CourseItem';
 import styles from './Home.module.scss';
@@ -13,10 +14,14 @@ function Home() {
     const [courseList, setCourseList] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:3004/courses')
-            .then((res) => res.json())
+        request
+            .get('courses', {
+                params: {
+                    _limit: 20,
+                },
+            })
             .then((res) => {
-                setCourseList(res);
+                setCourseList(res.data);
             });
     }, []);
 

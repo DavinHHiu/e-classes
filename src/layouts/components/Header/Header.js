@@ -3,8 +3,8 @@ import { faBars, faSearch } from '@fortawesome/free-solid-svg-icons';
 import classNames from 'classnames/bind';
 import Tippy from '@tippyjs/react/headless';
 
-import Search from '../Search/Search';
 import UserMenu from '../UserMenu/UserMenu';
+import Search from '../Search/Search';
 import styles from './Header.module.scss';
 
 const cx = classNames.bind(styles);
