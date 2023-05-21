@@ -1,5 +1,5 @@
 import classNames from 'classnames/bind';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 
 import request from '~/utils/request';
@@ -10,7 +10,10 @@ import styles from './Search.module.scss';
 const cx = classNames.bind(styles);
 
 function Search() {
-    const [searchValue, setSearchValue] = useState('');
+    const location = useLocation();
+    let params = new URLSearchParams(location.search);
+
+    const [searchValue, setSearchValue] = useState(params.get('q'));
     const [searchResult, setSearchResult] = useState([]);
     const [loading, setLoading] = useState(false);
     const [noInput, setNoInput] = useState(false);
@@ -44,6 +47,7 @@ function Search() {
         const searchValue = e.target.value;
         if (!searchValue.startsWith(' ')) {
             setSearchValue(e.target.value);
+            params.set('q', searchValue);
         }
     }
 

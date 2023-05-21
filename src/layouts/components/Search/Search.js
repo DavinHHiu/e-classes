@@ -79,7 +79,7 @@ function Search({ className }) {
                                 {loading && <span className={cx('input-value')}>Tìm '{searchValue}'</span>}
                                 {/* {showSearchResult || <span className={cx('input-value')}>Không có kết quả cho '{searchValue}'</span>} */}
                             </div>
-                            {showSearchResult && <SearchReSult result={searchResult} />}
+                            {showSearchResult && <SearchReSult searchValue={searchValue} result={searchResult} />}
                         </PopperWrapper>
                     </div>
                 )}

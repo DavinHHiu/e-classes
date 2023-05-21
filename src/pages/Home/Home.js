@@ -13,6 +13,7 @@ const cx = classNames.bind(styles);
 function Home() {
     const [courseList, setCourseList] = useState([]);
 
+
     useEffect(() => {
         request
             .get('courses', {

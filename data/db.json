@@ -105,7 +105,7 @@
     "courses": [
         {
             "id": 1,
-            "poster": "https://files.fullstack.edu.vn/f8-prod/courses/7.png",
+            "poster": "https://hocvienit.vn/wp-content/uploads/2020/09/khoa-hoc-lap-trinh-java-can-ban-1024x546.jpg",
             "name": "Khóa học Lập trình căn bản",
             "description": "Khóa học Lập trình căn bản cung cấp những kiến thức cơ bản về lập trình cho người mới bắt đầu. Bạn sẽ học về các ngôn ngữ lập trình phổ biến như C, Java hoặc Python. Khóa học sẽ giúp bạn hiểu về cú pháp lập trình, khái niệm cơ bản và cách thực hiện các tác vụ đơn giản thông qua các bài tập thực hành.",
             "studentsCount": "343",
@@ -116,7 +116,7 @@
         },
         {
             "id": 2,
-            "poster": "https://files.fullstack.edu.vn/f8-prod/courses/7.png",
+            "poster": "https://cdn1.edumall.io/640/k-5768aeb1047c995f75fdbf6b/20170817-anhdaidienmoi_thinh/uni03.png",
             "name": "Khóa học Phân tích và Thiết kế Hệ thống",
             "description": "Khóa học Phân tích và Thiết kế Hệ thống tập trung vào quá trình phân tích, thiết kế và xây dựng hệ thống thông tin. Bạn sẽ học về phương pháp phân tích yêu cầu, mô hình hóa dữ liệu, quy trình thiết kế hệ thống và cách tạo các biểu đồ luồng công việc. Khóa học sẽ giúp bạn có những kỹ năng cần thiết để phát triển các hệ thống thông tin hiệu quả.",
             "studentsCount": "235",
@@ -127,7 +127,7 @@
         },
         {
             "id": 3,
-            "poster": "https://files.fullstack.edu.vn/f8-prod/courses/7.png",
+            "poster": "https://zendvn.com/images/coursesOneToOne/Tewq1H9k5l.jpg",
             "name": "Khóa học Quản trị Cơ sở dữ liệu",
             "description": "Khóa học Quản trị Cơ sở dữ liệu tập trung vào quản lý và thiết kế cơ sở dữ liệu. Bạn sẽ học về các khái niệm cơ bản của cơ sở dữ liệu, cách thiết kế bảng, truy vấn dữ liệu và tối ưu hóa hiệu suất. Khóa học sẽ giúp bạn hiểu về hệ quản trị cơ sở dữ liệu phổ biến như MySQL hoặc Oracle và sử dụng chúng trong việc xây dựng và quản lý cơ sở dữ liệu.",
             "studentsCount": "567",
@@ -138,7 +138,7 @@
         },
         {
             "id": 4,
-            "poster": "https://files.fullstack.edu.vn/f8-prod/courses/7.png",
+            "poster": "https://ivolunteervietnam.com/wp-content/uploads/2021/03/83bf45ffc89f4474dff60c40add99791.jpg",
             "name": "Khóa học Mạng máy tính và An ninh mạng",
             "description": "Khóa học Mạng máy tính và An ninh mạng tập trung vào các khái niệm cơ bản về mạng máy tính và bảo mật mạng. Bạn sẽ học về cấu trúc mạng, giao thức mạng, quản lý mạng và các biện pháp bảo mật như xác thực, mã hóa và bảo vệ chống lại các cuộc tấn công. Khóa học sẽ giúp bạn có kiến thức cần thiết để thiết kế, cấu hình và bảo vệ các hệ thống mạng.",
             "studentsCount": "65",
@@ -149,7 +149,7 @@
         },
         {
             "id": 5,
-            "poster": "https://files.fullstack.edu.vn/f8-prod/courses/7.png",
+            "poster": "https://viencongnghethongtin.fbu.edu.vn/wp-content/uploads/sites/4/2021/05/app-1.png",
             "name": "Khóa học Phát triển Ứng dụng Di động",
             "description": "Khóa học Phát triển Ứng dụng Di động tập trung vào việc học cách phát triển ứng dụng di động cho các nền tảng như iOS và Android. Bạn sẽ học về ngôn ngữ lập trình và framework như Swift hoặc Kotlin, và cách tạo giao diện người dùng.",
             "studentsCount": "456",
@@ -160,7 +160,7 @@
         },
         {
             "id": 6,
-            "poster": "https://files.fullstack.edu.vn/f8-prod/courses/7.png",
+            "poster": "https://ivolunteervietnam.com/wp-content/uploads/2021/03/077295cd9bab293d38dc7eea122753be.jpg",
             "name": "Khóa học Trí tuệ nhân tạo",
             "description": "Khóa học Trí tuệ nhân tạo tập trung vào việc hiểu về trí tuệ nhân tạo và ứng dụng của nó trong lĩnh vực công nghệ thông tin. Bạn sẽ học về các thuật toán và kỹ thuật như học máy, học sâu và xử lý ngôn ngữ tự nhiên. Khóa học này sẽ giúp bạn phát triển khả năng thiết kế và triển khai các hệ thống trí tuệ nhân tạo để giải quyết các vấn đề thực tế.",
             "studentsCount": "452",
@@ -171,7 +171,7 @@
         },
         {
             "id": 7,
-            "poster": "https://files.fullstack.edu.vn/f8-prod/courses/7.png",
+            "poster": "https://static.ladipage.net/5ea25fb8965dbc32b290b128/multimedia-thumbnail-20210713091745.png",
             "name": "Khóa học Thiết kế Đồ họa và Đa phương tiện",
             "description": "Khóa học Thiết kế Đồ họa và Đa phương tiện tập trung vào việc phát triển kỹ năng thiết kế đồ họa và sử dụng các công cụ đa phương tiện. Bạn sẽ học về các phần mềm thiết kế như Adobe Photoshop, Illustrator và Premiere Pro, và cách tạo ra các hình ảnh, biểu đồ, video và âm thanh chất lượng cao. Khóa học này giúp bạn trở thành một người thiết kế đồ họa và đa phương tiện có kỹ năng sáng tạo và công nghệ.",
             "studentsCount": "124",
@@ -193,7 +193,7 @@
         },
         {
             "id": 9,
-            "poster": "https://files.fullstack.edu.vn/f8-prod/courses/7.png",
+            "poster": "https://ivolunteervietnam.com/wp-content/uploads/2021/03/e1daa26afae9e4c7a50c9209e3f8b894.jpg",
             "name": "Khóa học An toàn thông tin",
             "description": "Khóa học An toàn thông tin tập trung vào việc bảo vệ và đảm bảo tính bảo mật cho hệ thống thông tin. Bạn sẽ học về các nguyên tắc an toàn thông tin, phân tích rủi ro, phòng chống tấn công mạng, mã hóa và xác thực. Khóa học này giúp bạn có kiến thức cần thiết để đảm bảo an toàn thông tin và bảo vệ các dữ liệu quan trọng trong môi trường công nghệ thông tin",
             "studentsCount": "112",
@@ -204,7 +204,7 @@
         },
         {
             "id": 10,
-            "poster": "https://files.fullstack.edu.vn/f8-prod/courses/7.png",
+            "poster": "https://m.mic.gov.vn/Upload_Moi/2022_vn02/20220323-ta1.jpeg",
             "name": "Khóa học Trực tuyến về Công nghệ Blockchain",
             "description": "Khóa học Trực tuyến về Công nghệ Blockchain tập trung vào việc cung cấp kiến thức về công nghệ Blockchain và ứng dụng của nó. Bạn sẽ học về cách hoạt động của Blockchain, cấu trúc dữ liệu phân tán, các giao thức và các ứng dụng của Blockchain trong lĩnh vực tài chính, chuỗi cung ứng và quản lý dữ liệu. Khóa học này sẽ giúp bạn hiểu và áp dụng công nghệ Blockchain trong các lĩnh vực khác nhau và khám phá tiềm năng sáng tạo của nó.",
             "studentsCount": "346",
@@ -215,7 +215,7 @@
         },
         {
             "id": 11,
-            "poster": "https://files.fullstack.edu.vn/f8-prod/courses/7.png",
+            "poster": "https://kingmarketing.vn/wp-content/uploads/2022/06/img_60daf5f480a11-1280x720.jpg",
             "name": "Khóa học Thương mại điện tử",
             "description": "Khóa học Thương mại điện tử tập trung vào các khía cạnh của việc kinh doanh và giao dịch trực tuyến. Bạn sẽ học về cách xây dựng và quản lý một trang web thương mại điện tử, phát triển chiến lược tiếp thị trực tuyến, xử lý thanh toán và đảm bảo an toàn giao dịch. Khóa học này giúp bạn hiểu và áp dụng các phương pháp thành công trong lĩnh vực thương mại điện tử.",
             "studentsCount": "346",
@@ -237,7 +237,7 @@
         },
         {
             "id": 13,
-            "poster": "https://files.fullstack.edu.vn/f8-prod/courses/7.png",
+            "poster": "https://static.ybox.vn/2021/9/4/1631161138554-Kh%C3%B3a%20h%E1%BB%8Dc%20EXCEL%20Ph%C3%A2n%20T%C3%ADch%20D%E1%BB%AF%20Li%E1%BB%87u%20d%C3%A0nh%20cho%20nh%C3%A2n%20s%E1%BB%B1%20hi%E1%BB%87n%20%C4%91%E1%BA%A1i.png",
             "name": "Khóa học Phân tích dữ liệu",
             "description": "Khóa học Phân tích dữ liệu tập trung vào việc nắm bắt và phân tích thông tin từ các nguồn dữ liệu khác nhau. Bạn sẽ học về các phương pháp và công cụ để thu thập, xử lý và phân tích dữ liệu. Khóa học này giúp bạn phát triển khả năng hiểu và tận dụng thông tin từ dữ liệu để đưa ra quyết định thông minh và phân tích xu hướng kinh doanh.",
             "studentsCount": "346",
@@ -248,7 +248,7 @@
         },
         {
             "id": 14,
-            "poster": "https://files.fullstack.edu.vn/f8-prod/courses/7.png",
+            "poster": "https://hanngutracviet.com/uploads/tai-lieu/2017_09/cntt.jpg",
             "name": "Khóa học Thực tập Công nghệ thông tin",
             "description": "Khóa học Thực tập Công nghệ thông tin cung cấp cơ hội cho sinh viên hoặc người mới tốt nghiệp để thực hành và áp dụng kiến thức đã học trong môi trường thực tế. Bạn sẽ có cơ hội làm việc trong một dự án thực tế, hợp tác với các chuyên gia và áp dụng các kỹ năng công nghệ thông tin vào công việc hàng ngày. Khóa học này giúp bạn có kinh nghiệm thực tế và chuẩn bị cho sự nghiệp.",
             "studentsCount": "346",
@@ -270,7 +270,7 @@
         },
         {
             "id": 16,
-            "poster": "https://files.fullstack.edu.vn/f8-prod/courses/7.png",
+            "poster": "https://athena.edu.vn/content/uploads/khoa-hoc-quan-tri-mang-co-ban.jpg",
             "name": "Khóa học Quản lý Hệ thống và Mạng",
             "description": "Khóa học Quản lý Hệ thống và Mạng tập trung vào việc học cách quản lý, vận hành và bảo trì hệ thống và mạng máy tính. Bạn sẽ học về cài đặt và cấu hình hệ thống, quản lý người dùng, quản lý mạng và bảo mật hệ thống. Khóa học này giúp bạn phát triển kỹ năng quản lý và giám sát hệ thống và mạng hiệu quả.",
             "studentsCount": "346",
@@ -281,7 +281,7 @@
         },
         {
             "id": 17,
-            "poster": "https://files.fullstack.edu.vn/f8-prod/courses/7.png",
+            "poster": "https://daotaotester.com/wp-content/uploads/2020/08/tester-co-ban-daotao.jpg",
             "name": "Khóa học Kiểm thử phần mềm",
             "description": "Khóa học Kiểm thử phần mềm tập trung vào việc học cách đảm bảo chất lượng và độ tin cậy của phần mềm. Bạn sẽ học về các phương pháp kiểm thử, quy trình kiểm thử, công cụ kiểm thử và xác nhận lỗi. Khóa học này giúp bạn trở thành một chuyên gia kiểm thử phần mềm có khả năng tìm ra và sửa lỗi trong quá trình phát triển phần mềm.",
             "studentsCount": "346",
@@ -292,7 +292,7 @@
         },
         {
             "id": 18,
-            "poster": "https://files.fullstack.edu.vn/f8-prod/courses/7.png",
+            "poster": "https://funix.edu.vn/wp-content/uploads/2022/02/robinawspressimg56613332-16454-2027-8984-1645410539-1.jpg",
             "name": "Khóa học Đám mây và Dịch vụ Trực tuyến",
             "description": "Khóa học Đám mây và Dịch vụ Trực tuyến tập trung vào việc hiểu và sử dụng các công nghệ đám mây và dịch vụ trực tuyến như AWS (Amazon Web Services) và Google Cloud Platform. Bạn sẽ học về các khái niệm cơ bản về đám mây, triển khai ứng dụng trên đám mây, quản lý và bảo mật dữ liệu. Khóa học này giúp bạn tận dụng tiềm năng của đám mây và dịch vụ trực tuyến trong việc phát triển và triển khai ứng dụng.",
             "studentsCount": "346",
@@ -303,7 +303,7 @@
         },
         {
             "id": 19,
-            "poster": "https://files.fullstack.edu.vn/f8-prod/courses/7.png",
+            "poster": "https://www.thienhoang.com.vn/sites/default/files/1.jpg",
             "name": "Khóa học IoT và Ứng dụng Thông minh",
             "description": "Khóa học IoT và Ứng dụng Thông minh tập trung vào áp dụng công nghệ IoT để kết nối và tương tác giữa các thiết bị thông minh. Bạn sẽ học về xây dựng và quản lý hệ thống IoT, giao thức và tiêu chuẩn, cũng như phân tích và sử dụng dữ liệu từ các thiết bị thông minh. Khóa học này giúp bạn phát triển ứng dụng và giải pháp thông minh dựa trên IoT, như nhà thông minh, thành phố thông minh và nhiều hơn nữa.",
             "studentsCount": "346",
@@ -314,7 +314,7 @@
         },
         {
             "id": 20,
-            "poster": "https://files.fullstack.edu.vn/f8-prod/courses/7.png",
+            "poster": "https://i.imgur.com/DJ4aPJV.jpg",
             "name": "Khóa học Truyền thông và Mạng xã hội",
             "description": "Khóa học Truyền thông và Mạng xã hội tập trung vào việc hiểu về vai trò của truyền thông và mạng xã hội trong môi trường kỹ thuật số. Bạn sẽ học về cách xây dựng chiến lược truyền thông, quản lý mạng xã hội, tạo nội dung hấp dẫn và phân tích phản hồi từ người dùng. Khóa học này giúp bạn phát triển kỹ năng quảng bá thương hiệu và tương tác hiệu quả với khách hàng thông qua truyền thông và mạng xã hội.",
             "studentsCount": "346",

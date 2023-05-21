@@ -5,10 +5,10 @@ import ResultItem from './ResultItem';
 
 const cx = classNames.bind(styles);
 
-function SearchReSult({ result }) {
+function SearchReSult({ result, searchValue }) {
     return (
         <div className={cx('wrapper')}>
-            <Header />
+            <Header searchValue = {searchValue} />
             <div className={cx('body')}>
                 {result.map(item => (
                     <ResultItem key={item.id} poster={item.poster} name={item.name} />
