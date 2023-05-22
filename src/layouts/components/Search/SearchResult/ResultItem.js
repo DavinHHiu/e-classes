@@ -4,13 +4,15 @@ import { Link } from 'react-router-dom';
 
 const cx = classNames.bind(styles);
 
-function ResultItem({ poster, name }) {
+function ResultItem({ poster, name, courseId }) {
+    const path = `/course/${courseId}`;
+
     return (
-        <Link to="" className={cx('result-item')}>
+        <Link to={path} className={cx('result-item')}>
             <img className={cx('result-avatar')} src={poster} alt={name} />
             <span className={cx('result-name')}>{name}</span>
         </Link>
     );
 }
-    
+
 export default ResultItem;

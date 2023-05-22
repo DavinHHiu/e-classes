@@ -8,10 +8,11 @@ const cx = classNames.bind(styles);
 function SearchReSult({ result, searchValue }) {
     return (
         <div className={cx('wrapper')}>
-            <Header searchValue = {searchValue} />
+            <Header searchValue={searchValue} />
             <div className={cx('body')}>
-                {result.map(item => (
-                    <ResultItem key={item.id} poster={item.poster} name={item.name} />
+
+                {result.map((item) => (
+                    <ResultItem key={item.id} courseId={item.id} poster={item.poster} name={item.name} />
                 ))}
             </div>
         </div>

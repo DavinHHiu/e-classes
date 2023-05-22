@@ -8,7 +8,7 @@
             "phone": "(404) 555-3456",
             "role": "student",
             "courseManageIds": [],
-            "courseJoinIds": []
+            "courseJoinIds": [1, 3, 6, 7, 11, 13, 15, 18, 20]
         },
         {
             "id": 2,
