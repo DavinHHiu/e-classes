@@ -20,7 +20,7 @@
     background-repeat: none;
     background-position: top;
     border-radius: 16px;
-    box-shadow: 0 0 10px rgb(22 24 35 / 0.35);
+    box-shadow: 0 0 5px rgb(22 24 35 / 0.3);
 }
 
 .content {
@@ -63,7 +63,13 @@
 }
 
 .active {
-    color: var(--dark);
+    color: rgb(18, 158, 175);
+    background-color: rgb(18 158 175 /0.1);
+
+    &:hover {
+        color: rgb(18, 158, 175);
+        background-color: rgb(18 158 175 /0.1);
+    }
 
     &::after {
         content: '';
@@ -73,6 +79,6 @@
         width: 100%;
         border-top-left-radius: 4px;
         border-top-right-radius: 4px;
-        background-color: var(--dark);
+        background-color: rgb(18, 158, 175);
     }
 }

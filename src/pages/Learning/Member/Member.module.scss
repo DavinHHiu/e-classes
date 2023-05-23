@@ -1,0 +1,64 @@
+.wrapper {
+    margin: 0 auto;
+    padding: 24px;
+    width: calc(100% - 15rem);
+}
+
+.title-box {
+    height: 6.25rem;
+    border-bottom: 1px solid rgb(18, 158, 175);
+    padding-left: 16px;
+    margin-bottom: 4px;
+}
+
+.title {
+    font-size: 3.2rem;
+    font-weight: 400;
+    color: rgb(18, 158, 175);
+}
+
+.user {
+    display: flex;
+    align-items: center;
+}
+
+.avatar-box {
+    padding: 0 8px;
+}
+
+.students-title {
+    margin-bottom: 16px;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+.students {
+    padding-right: 24px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: rgb(18, 158, 175);
+}
+
+.user {
+    padding: 8px;
+    height: 60px;
+    border-top: 1px solid transparent;
+}
+
+.user + .user {
+    border-top: 1px solid rgb(22 24 35/0.2);
+}
+
+.avatar {
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+}
+
+.name {
+    margin-left: 8px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: rgb(22 24 35/0.8);
+    transform: translateY(-15%);
+}

@@ -15,8 +15,6 @@ function Assignment() {
         request.get('courses/1').then((res) => setExercises(res.data.exercises));
     }, []);
 
-    console.log(show);
-
     return (
         <div className={cx('wrapper')}>
             {exercises &&
@@ -24,7 +22,10 @@ function Assignment() {
                     <Exercise
                         key={index}
                         exercise={exercise}
-                        onClick={() => setShow(exercise.id)}
+                        onClick={() => {
+                            if (show === exercise.id) setShow(0);
+                            else setShow(exercise.id);
+                        }}
                         active={show === exercise.id}
                     />
                 ))}

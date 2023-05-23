@@ -6,6 +6,7 @@ import request from '~/utils/request';
 import Notification from './Notification/Notification';
 import styles from './Learning.module.scss';
 import Assignment from './Assignment/Assignment';
+import Member from './Member/Member';
 
 const cx = classNames.bind(styles);
 
@@ -52,7 +53,8 @@ function Learning() {
                     </ul>
                 </div>
                 {/* <Notification avatar={user.avatar} /> */}
-                <Assignment />
+                {/* <Assignment /> */}
+                <Member course={course} />
             </div>
         )
     );
