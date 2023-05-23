@@ -30,7 +30,7 @@ function Header() {
                 <div className={cx('search-btn')}>
                     <FontAwesomeIcon icon={faSearch} />
                 </div>
-                <Tippy placement="bottom" offset={[-110, 10]} interactive render={() => <UserMenu />}>
+                <Tippy className={cx('')} placement="bottom" offset={[-110, 10]} interactive render={() => <UserMenu />}>
                     <img
                         className={cx('avatar')}
                         src="https://w7.pngwing.com/pngs/867/134/png-transparent-giant-panda-dog-cat-avatar-fox-animal-tag-mammal-animals-carnivoran-thumbnail.png"

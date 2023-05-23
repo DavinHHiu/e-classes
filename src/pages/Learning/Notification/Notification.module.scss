@@ -1,0 +1,125 @@
+.wrapper {
+    width: 100%;
+    min-height: 1000px;
+}
+
+.new-noti {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 72px;
+    margin-top: 20px;
+    border-radius: 8px;
+    background-color: var(--white);
+    box-shadow: 0 2px 5px rgb(22 24 35/0.3);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+
+    &:hover .inner-text {
+        color: rgb(18, 158, 175);
+    }
+}
+
+.active {
+    height: 280px;
+    align-items: flex-start;
+    padding-top: 24px;
+    transition: all 0.3s ease-in-out;
+
+    .text-box {
+        height: 134px;
+        width: 100%;
+        padding: 0 24px;
+
+        .editable-content {
+            resize: none;
+            padding: 25px 20px;
+            height: 100%;
+            width: 100%;
+            font-size: 1.4rem;
+            font-family: inherit;
+            outline: none;
+            border: none;
+            background-color: #f6f6f6;
+        }
+
+        .editable-content::before {
+            position: absolute;
+            // content: attr(placeholder);
+            font-size: 17px;
+            font-weight: 500;
+            color: rgb(22 24 35/0.6);
+        }
+
+        .editable-content:focus + .text-type {
+            border-bottom: 2px solid rgb(18, 158, 175);
+        }
+
+        .text-type {
+            background-color: #f6f6f6;
+            border-bottom: 1px solid var(--black);
+            padding: 8px 24px;
+            margin-top: -6px;
+            // transition: border-bottom 0.3s ease-in-out;
+
+            .icon {
+                font-size: 18px;
+                color: rgb(22 24 35/0.7);
+
+                &:hover {
+                    color: var(--black);
+                }
+            }
+            .icon + .icon {
+                margin-left: 20px;
+            }
+        }
+        .btn-container {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 20px;
+
+            .discard,
+            .submit {
+                font-size: 1.4rem;
+                padding: 10px 30px;
+                min-width: 60px;
+                width: 80px;
+                color: rgb(22 24 35/0.7);
+                border-radius: 4px;
+            }
+
+            .submit {
+                color: var(--white);
+                background-color: rgb(18, 158, 175);
+            }
+
+            .discard {
+                margin-right: 16px;
+                &:hover {
+                    background-color: #f6f6f6;
+                }
+            }
+        }
+    }
+}
+
+.avatar-container {
+    display: flex;
+    padding: 16px;
+    margin-left: 8px;
+}
+
+.avatar {
+    max-height: 40px;
+    max-width: 40px;
+    border-radius: 50%;
+}
+
+.inner-text {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: rgb(22 24 35/0.5);
+    transition: all 0.1s ease-in-out;
+}

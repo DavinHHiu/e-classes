@@ -3,7 +3,9 @@ const path = {
     classes: '/classes',
     search: '/search',
     course: '/course/:id',
-    learning: 'learning/:id',
+    learningNotification: 'learning/notification/:id',
+    learningAssignment: 'learning/assignment/:id',
+    learningMember: 'learning/member/:id',
 };
 
 export default path;

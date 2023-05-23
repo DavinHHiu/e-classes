@@ -11,7 +11,9 @@ const publicRoutes = [
     { path: config.path.classes, component: Classes },
     { path: config.path.search, component: Search, layout: 'NoSearchLayout' },
     { path: config.path.course, component: ClassDetail },
-    { path: config.path.learning, component: Learning },
+    { path: config.path.learningNotification, component: Learning },
+    { path: config.path.learningAssignment, component: Learning },
+    { path: config.path.learningMember, component: Learning },
 ];
 
 const privateRoutes = [];

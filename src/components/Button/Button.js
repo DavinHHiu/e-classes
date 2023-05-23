@@ -21,7 +21,7 @@ function Button({
     let Comp = 'button';
     const props = {
         onClick,
-        ...passProps
+        ...passProps,
     };
 
     if (disable) {

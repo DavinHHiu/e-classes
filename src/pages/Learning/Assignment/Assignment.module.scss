@@ -1,0 +1,117 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.exercise-container {
+    width: calc(100% - 15rem);
+}
+
+.exercise-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    padding: 0 60px 0 40px;
+    border-radius: 8px;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+        background-color: rgb(18 158 175/ 0.1);
+    }
+}
+
+.exercise-container + .exercise-container {
+    border-top: 1px solid rgb(22 24 35/ 0.1);
+}
+
+.exercise-container:hover + .exercise-container,
+.exercise-container:hover {
+    border-top: 1px solid rgb(22 24 35/ 0);
+}
+
+.exercise-container:nth-child(1) {
+    border: none;
+}
+
+.left-side-box {
+    display: flex;
+    align-items: center;
+}
+
+.icon-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: rgb(18, 158, 175);
+}
+
+.icon {
+    color: var(--white);
+}
+
+.name {
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-left: 20px;
+}
+
+.due-date {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: rgb(22 24 35/0.5);
+}
+
+//Toggle
+
+.active {
+    box-shadow: 0 2px 5px rgb(22 24 35/0.35);
+    border-radius: 8px;
+    margin: 10px 0;
+    transition: all 0.5s ease-in-out;
+
+    .exercise-box {
+        background-color: rgb(18 158 175/ 0.1);
+    }
+}
+
+.exercise-detail-box {
+    width: 100%;
+    padding: 16px 24px 50px;
+    border-top: 1px solid rgb(22 24 35 /0.15);
+    border-bottom: 1px solid rgb(22 24 35 /0.15);
+}
+
+.deadline {
+    margin: 0 0 16px;
+}
+
+.postDate {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: rgb(22 24 35 / 0.6);
+}
+
+.content {
+    font-size: 1.4rem;
+    color: rgb(22 24 35 / 0.75);
+}
+
+.more {
+    padding: 17px 24px;
+    display: flex;
+    align-items: center;
+}
+
+.more-btn {
+    display: block;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: rgb(18 158 175/ 1.1);
+}
