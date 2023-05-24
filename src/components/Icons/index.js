@@ -1,4 +1,4 @@
-export const ExcerciseIcon = ({ width = '2.4rem', height = '2.4rem', className }) => {
+export const ExerciseIcon = ({ width = '2.4rem', height = '2.4rem', className }) => {
     return (
         <svg
             focusable="false"

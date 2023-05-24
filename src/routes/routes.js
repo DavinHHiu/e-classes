@@ -1,5 +1,6 @@
 import config from '~/config';
 
+import Login from '~/pages/Login';
 import Home from '~/pages/Home';
 import Classes from '~/pages/Classes';
 import Search from '~/pages/Search';
@@ -7,6 +8,7 @@ import ClassDetail from '~/pages/ClassDetail/ClassDetail';
 import Learning from '~/pages/Learning/Learning';
 
 const publicRoutes = [
+    { path: config.path.login, component: Login, layout: null },
     { path: config.path.home, component: Home },
     { path: config.path.classes, component: Classes },
     { path: config.path.search, component: Search, layout: 'NoSearchLayout' },

@@ -1,5 +1,6 @@
 const path = {
-    home: '/',
+    login: '/',
+    home: '/home',
     classes: '/classes',
     search: '/search',
     course: '/course/:id',

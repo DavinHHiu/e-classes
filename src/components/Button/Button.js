@@ -9,6 +9,7 @@ function Button({
     href,
     primary = false,
     outline = false,
+    noColor = false,
     more = false,
     disable = false,
     leftIcon,
@@ -46,6 +47,7 @@ function Button({
         [className]: className,
         primary,
         outline,
+        noColor,
         more,
         disable,
     });

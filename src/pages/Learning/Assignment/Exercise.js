@@ -1,6 +1,6 @@
 import classNames from 'classnames/bind';
 
-import { ExcerciseIcon } from '~/components/Icons';
+import { ExerciseIcon } from '~/components/Icons';
 import styles from './Assignment.module.scss';
 
 const cx = classNames.bind(styles);
@@ -13,7 +13,7 @@ function Exercise({ exercise, onClick, active }) {
                 <div className={cx('exercise-box')}>
                     <div className={cx('left-side-box')}>
                         <div className={cx('icon-box')}>
-                            <ExcerciseIcon className={cx('icon')} />
+                            <ExerciseIcon className={cx('icon')} />
                         </div>
                         <span className={cx('name')}>{exercise.name}</span>
                     </div>
@@ -25,7 +25,7 @@ function Exercise({ exercise, onClick, active }) {
                     <div className={cx('exercise-box')}>
                         <div className={cx('left-side-box')}>
                             <div className={cx('icon-box')}>
-                                <ExcerciseIcon className={cx('icon')} />
+                                <ExerciseIcon className={cx('icon')} />
                             </div>
                             <span className={cx('name')}>{exercise.name}</span>
                         </div>
