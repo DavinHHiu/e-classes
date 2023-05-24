@@ -39,7 +39,7 @@ function Member({ course }) {
                     <strong className={cx('students')}>{course.studentsCount} Sinh viên</strong>
                 </div>
                 {students.map((student) => (
-                    <div className={cx('user')}>
+                    <div key={student.id} className={cx('user')}>
                         <span className={cx('avatar-box')}>
                             <img className={cx('avatar')} src={student.avatar} alt="" />
                         </span>

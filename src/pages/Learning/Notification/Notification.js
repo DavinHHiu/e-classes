@@ -11,7 +11,6 @@ const cx = classNames.bind(styles);
 function Notification({ avatar }) {
     const [active, setActive] = useState(false);
     const [textBox, setTextBox] = useState('');
-    const [show, setShow] = useState();
 
     const inputRef = useRef();
 
@@ -19,8 +18,7 @@ function Notification({ avatar }) {
         setTextBox(e.target.value);
     };
 
-    const handleOpen = (e) => {
-        setShow(e.target.key)
+    const handleOpen = () => {
         setActive(true);
     };
 
@@ -31,40 +29,6 @@ function Notification({ avatar }) {
 
     return (
         <div className={cx('wrapper')}>
-            <div key='1' className={cx('new-noti', { active: active })} onClick={handleOpen}>
-                {!active && (
-                    <>
-                        <div className={cx('avatar-container')}>
-                            <img className={cx('avatar')} src={avatar} alt="" />
-                        </div>
-                        <div className={cx('inner-text')}>Thông báo nội dung nào đó cho lớp học của bạn</div>
-                    </>
-                )}
-
-                {active && (
-                    <div className={cx('text-box')}>
-                        <textarea
-                            ref={inputRef}
-                            className={cx('editable-content')}
-                            placeholder="Thông báo nội dung nào đó cho lớp học của bạn"
-                            onChange={handleChange}
-                        ></textarea>
-                        <div className={cx('text-type')}>
-                            <FontAwesomeIcon className={cx('icon')} icon={faBold} />
-                            <FontAwesomeIcon className={cx('icon')} icon={faItalic} />
-                            <FontAwesomeIcon className={cx('icon')} icon={faUnderline} />
-                        </div>
-                        <div className={cx('btn-container')}>
-                            <Button className={cx('discard')} onClick={handleCancel}>
-                                Hủy
-                            </Button>
-                            <Button disable={!textBox} className={cx('submit')}>
-                                Đăng
-                            </Button>
-                        </div>
-                    </div>
-                )}
-            </div>
             <div className={cx('new-noti', { active: active })} onClick={handleOpen}>
                 {!active && (
                     <>

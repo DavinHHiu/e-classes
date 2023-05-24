@@ -1,5 +1,5 @@
 import classNames from 'classnames/bind';
-import { NavLink, useParams } from 'react-router-dom';
+import { NavLink, useLocation, useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 
 import request from '~/utils/request';
@@ -12,6 +12,8 @@ const cx = classNames.bind(styles);
 
 function Learning() {
     const { id } = useParams();
+    const location = useLocation();
+
     const pathNotification = `/learning/notification/${id}`;
     const pathAssignment = `/learning/assignment/${id}`;
     const pathMember = `/learning/member/${id}`;
@@ -52,9 +54,9 @@ function Learning() {
                         </li>
                     </ul>
                 </div>
-                {/* <Notification avatar={user.avatar} /> */}
-                {/* <Assignment /> */}
-                <Member course={course} />
+                {location.pathname.startsWith('/learning/notification') && <Notification avatar={user.avatar} />}
+                {location.pathname.startsWith('/learning/assignment') && <Assignment exercises={course.exercises}/>}
+                {location.pathname.startsWith('/learning/member') && <Member course={course} />}
             </div>
         )
     );

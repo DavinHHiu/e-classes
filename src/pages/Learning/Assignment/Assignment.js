@@ -1,19 +1,13 @@
 import classNames from 'classnames/bind';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
-import request from '~/utils/request';
 import Exercise from './Exercise';
 import styles from './Assignment.module.scss';
 
 const cx = classNames.bind(styles);
 
-function Assignment() {
-    const [exercises, setExercises] = useState();
+function Assignment({ exercises }) {
     const [show, setShow] = useState();
-
-    useEffect(() => {
-        request.get('courses/1').then((res) => setExercises(res.data.exercises));
-    }, []);
 
     return (
         <div className={cx('wrapper')}>

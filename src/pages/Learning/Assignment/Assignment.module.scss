@@ -5,9 +5,12 @@
 }
 
 .exercise-container {
+    position: relative;
     width: calc(100% - 15rem);
+    transition: all 0.5s ease-in-out;
 }
 
+//header
 .exercise-box {
     display: flex;
     justify-content: space-between;
@@ -16,7 +19,6 @@
     width: 100%;
     padding: 0 60px 0 40px;
     border-radius: 8px;
-    transition: all 0.2s ease-in-out;
     cursor: pointer;
 
     &:hover {
@@ -68,6 +70,8 @@
     color: rgb(22 24 35/0.5);
 }
 
+//Body
+
 //Toggle
 
 .active {
@@ -75,13 +79,16 @@
     border-radius: 8px;
     margin: 10px 0;
     transition: all 0.5s ease-in-out;
+    overflow: hidden;
 
     .exercise-box {
+        border-radius: 0px;
         background-color: rgb(18 158 175/ 0.1);
     }
 }
 
 .exercise-detail-box {
+    // position: absolute;
     width: 100%;
     padding: 16px 24px 50px;
     border-top: 1px solid rgb(22 24 35 /0.15);
