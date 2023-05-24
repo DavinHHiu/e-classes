@@ -1,5 +1,6 @@
 import classNames from 'classnames/bind';
 import { useEffect, useState } from 'react';
+import { Navigate } from 'react-router-dom';
 
 import request from '~/utils/request';
 import ListItem from '../components/ListItem/ListItem';
@@ -20,6 +21,7 @@ function Classes() {
 
     return (
         <div className={cx('wrapper')}>
+            {!!localStorage.getItem('user') || <Navigate to="/" />}
             <ListItem courseList={courseList} title="Lớp học của tôi" />
         </div>
     );

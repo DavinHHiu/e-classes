@@ -1,5 +1,5 @@
 import classNames from 'classnames/bind';
-import { NavLink, useLocation } from 'react-router-dom';
+import { NavLink, Navigate, useLocation } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 
 import request from '~/utils/request';
@@ -53,6 +53,7 @@ function Search() {
 
     return (
         <div className={cx('wrapper')}>
+            {!!localStorage.getItem('user') || <Navigate to="/" />}
             <input
                 placeholder="Tìm kiếm..."
                 value={searchValue}

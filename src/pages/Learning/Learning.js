@@ -1,12 +1,12 @@
 import classNames from 'classnames/bind';
-import { NavLink, useLocation, useParams } from 'react-router-dom';
+import { NavLink, Navigate, useLocation, useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 
 import request from '~/utils/request';
 import Notification from './Notification/Notification';
-import styles from './Learning.module.scss';
 import Assignment from './Assignment/Assignment';
 import Member from './Member/Member';
+import styles from './Learning.module.scss';
 
 const cx = classNames.bind(styles);
 
@@ -30,6 +30,7 @@ function Learning() {
         course &&
         user && (
             <div className={cx('wrapper')}>
+                {!!localStorage.getItem('user') || <Navigate to="/" />}
                 <span className={cx('course-name')}>{course.name}</span>
                 <div className={cx('background-poster')} style={{ backgroundImage: `url(${course.poster})` }}></div>
                 <div className={cx('content')}>
@@ -55,7 +56,7 @@ function Learning() {
                     </ul>
                 </div>
                 {location.pathname.startsWith('/learning/notification') && <Notification avatar={user.avatar} />}
-                {location.pathname.startsWith('/learning/assignment') && <Assignment exercises={course.exercises}/>}
+                {location.pathname.startsWith('/learning/assignment') && <Assignment exercises={course.exercises} />}
                 {location.pathname.startsWith('/learning/member') && <Member course={course} />}
             </div>
         )

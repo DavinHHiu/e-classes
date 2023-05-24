@@ -1,5 +1,5 @@
 import classNames from 'classnames/bind';
-import { useParams } from 'react-router-dom';
+import { Navigate, useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 
 import request from '~/utils/request';
@@ -18,6 +18,8 @@ function ClassDetail() {
     return (
         course && (
             <div className={cx('wrapper')}>
+                {!!localStorage.getItem('user') || <Navigate to="/" />}
+
                 <div className={cx('course-info')}>
                     <h1 className={cx('name')}>{course.name}</h1>
                     <span className={cx('description')}>{course.description}</span>

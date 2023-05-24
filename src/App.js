@@ -1,6 +1,6 @@
 import { Fragment } from 'react';
 import { publicRoutes } from './routes';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate, useNavigate } from 'react-router-dom';
 import MainLayout from './layouts/MainLayout';
 import NoSearchLayout from './layouts/NoSearchLayout';
 
