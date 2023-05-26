@@ -16,6 +16,7 @@ function Member({ course }) {
     }, []);
 
     const students = users.filter((user) => course.studentIds.includes(user.id));
+    const teacher = users.find((user) => user.id === course.userManagerId);
 
     return (
         students && (
@@ -23,16 +24,14 @@ function Member({ course }) {
                 <div className={cx('title-box')}>
                     <h2 className={cx('title')}>Giáo viên</h2>
                 </div>
-                <div className={cx('user')}>
-                    <span className={cx('avatar-box')}>
-                        <img
-                            className={cx('avatar')}
-                            src="https://lh3.googleusercontent.com/a/default-user=s32-c"
-                            alt=""
-                        />
-                    </span>
-                    <span className={cx('name')}>{course.userManagerId}</span>
-                </div>
+                {teacher && (
+                    <div className={cx('user')}>
+                        <span className={cx('avatar-box')}>
+                            <img className={cx('avatar')} src={teacher.avatar} alt="avatar" />
+                        </span>
+                        <span className={cx('name')}>{teacher.name}</span>
+                    </div>
+                )}
 
                 <div className={cx('title-box', 'students-title')}>
                     <h2 className={cx('title')}>Bạn học</h2>
@@ -41,7 +40,7 @@ function Member({ course }) {
                 {students.map((student) => (
                     <div key={student.id} className={cx('user')}>
                         <span className={cx('avatar-box')}>
-                            <img className={cx('avatar')} src={student.avatar} alt="" />
+                            <img className={cx('avatar')} src={student.avatar} alt="avatar" />
                         </span>
                         <span className={cx('name')}>{student.name}</span>
                     </div>

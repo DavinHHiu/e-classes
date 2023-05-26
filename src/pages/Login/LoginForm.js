@@ -15,7 +15,7 @@ const initialUserLogin = {
 };
 
 function LoginForm({ forwardRegister }) {
-    const [userLogin, setUserLogin] = useState(initialUserLogin);
+    const [userLogin, setUserLogin] = useState(JSON.parse(localStorage.getItem('user')) || initialUserLogin);
     const [users, setUsers] = useState([]);
     const [error, setError] = useState('');
     const navigate = useNavigate();
@@ -40,7 +40,7 @@ function LoginForm({ forwardRegister }) {
             setError('Sai tài khoản hoặc mật khẩu');
         } else {
             localStorage.setItem('user', JSON.stringify(user));
-            navigate('/home');
+            navigate('/');
         }
     };
 

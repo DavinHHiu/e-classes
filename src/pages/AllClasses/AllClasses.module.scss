@@ -1,0 +1,86 @@
+.wrapper {
+    padding: 0 44px 44px;
+}
+
+.course-result {
+    display: flex;
+    align-items: center;
+    padding: 32px;
+    border-radius: 16px;
+    border: 2px solid rgb(22 24 35/0.15);
+    min-height: 250px;
+    max-width: 1000px;
+    margin: 0 auto;
+    gap: 40px;
+}
+
+.course-result + .course-result {
+    margin-top: 16px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.title {
+    font-size: 2.2rem;
+}
+
+.description {
+    font-size: 1.5rem;
+    color: rgb(22 24 35/0.75);
+}
+
+.icon,
+.students {
+    color: rgb(22 24 35/0.75);
+    font-size: 1.4rem;
+}
+
+.icon {
+    margin-right: 6px;
+}
+
+.poster {
+    flex-shrink: 0;
+    height: 150px;
+    width: 260px;
+    background-size: cover;
+    background-repeat: none;
+    border-radius: 16px;
+}
+
+.pages {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 4px;
+}
+
+.page {
+    padding: 4px 12px;
+    border-radius: 4px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    border: 1px solid transparent;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+        border: 1px solid rgb(22 24 35/0.15);
+    }
+}
+
+.active {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+@media (max-width: 1113px) {
+    .wrapper {
+        padding: 0;
+    }
+}

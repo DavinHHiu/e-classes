@@ -67,7 +67,8 @@
     background-color: rgb(22 24 35 /0.12);
 }
 
-.not-found, .loading {
+.not-found,
+.loading {
     font-size: 1.4rem;
     padding: 32px 0;
     display: block;
@@ -76,13 +77,18 @@
 
 .course-result {
     display: flex;
+    align-items: center;
     padding: 20px 0;
+}
+
+.course-result + .course-result {
+    border-top: 1px solid rgb(22 24 35 /0.12);
 }
 
 .poster {
     padding-top: 17%;
     min-width: 280px;
-    min-height: 160px;
+    height: 160px;
     background-repeat: no-repeat;
     background-size: cover;
     display: block;

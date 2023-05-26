@@ -25,7 +25,7 @@ function Home() {
 
     return (
         <div className={cx('wrapper')}>
-            {!!localStorage.getItem('user') || <Navigate to="/" />}
+            {!!localStorage.getItem('user') || <Navigate to="/login" />}
             <ListItem courseList={courseList} title="Lớp học miễn phí" />
         </div>
     );

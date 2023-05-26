@@ -33,7 +33,7 @@ function Notification({ avatar }) {
                 {!active && (
                     <>
                         <div className={cx('avatar-container')}>
-                            <img className={cx('avatar')} src={avatar} alt="" />
+                            <img className={cx('avatar')} src={avatar} alt="avatar" />
                         </div>
                         <div className={cx('inner-text')}>Thông báo nội dung nào đó cho lớp học của bạn</div>
                     </>

@@ -1,11 +1,18 @@
 import classNames from 'classnames/bind';
-import styles from './SearchResult.module.scss';
 import { Link } from 'react-router-dom';
+
+import styles from './SearchResult.module.scss';
+import { useContext } from 'react';
+import { UserContext } from '~/App';
 
 const cx = classNames.bind(styles);
 
 function ResultItem({ poster, name, courseId }) {
-    const path = `/course/${courseId}`;
+    let path = `/course/${courseId}`;
+    const courseIds = useContext(UserContext).courseJoinIds;
+    if(courseIds.includes(courseId)) {
+        path = `/learning/notification/${courseId}`
+    }
 
     return (
         <Link to={path} className={cx('result-item')}>

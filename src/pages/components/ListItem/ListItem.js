@@ -17,7 +17,7 @@ function ListItem({ courseList, title }) {
                     className={cx('more')}
                     rightIcon={<FontAwesomeIcon className={cx('more-icon')} icon={faChevronRight} />}
                     more
-                    to=""
+                    to="/allclasses?page=1"
                 >
                     Xem tất cả
                 </Button>

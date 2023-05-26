@@ -1,9 +1,10 @@
 import classNames from 'classnames/bind';
+import { useEffect, useState } from 'react';
 
+import request from '~/utils/request';
 import logo from '~/assets/images/e-classes-logo.png';
 import Button from '~/components/Button/Button';
 import styles from './Login.module.scss';
-import { useState } from 'react';
 
 const cx = classNames.bind(styles);
 
@@ -17,6 +18,11 @@ const initialFormValue = {
 
 function RegisterForm() {
     const [formValue, setFormValue] = useState(initialFormValue);
+    const [lastUser, setLastUser] = useState({});
+
+    useEffect(() => {
+        request.get('users').then((res) => setLastUser(res.data[res.data.length - 1]));
+    }, []);
 
     const handleChange = (event) => {
         const { value, name } = event.target;
@@ -28,8 +34,21 @@ function RegisterForm() {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        console.log(formValue);
-    }
+        delete formValue.confirmPassword;
+        const user = {
+            ...formValue,
+            id: lastUser.id + 1,
+            phone: '',
+            role: '',
+            courseJoinIds: [],
+            courseManageIds: [],
+            avatar: '',
+        };
+        request.post('users', user).then((res) => {
+            localStorage.setItem('user', JSON.stringify(res.data));
+            window.location.reload();
+        });
+    };
 
     return (
         <div className={cx('form-container')}>

@@ -18,7 +18,7 @@ function ClassDetail() {
     return (
         course && (
             <div className={cx('wrapper')}>
-                {!!localStorage.getItem('user') || <Navigate to="/" />}
+                {!!localStorage.getItem('user') || <Navigate to="/login" />}
 
                 <div className={cx('course-info')}>
                     <h1 className={cx('name')}>{course.name}</h1>

@@ -130,7 +130,7 @@
             "phone": "024-648-3804",
             "role": "student",
             "courseManageIds": [],
-            "courseJoinIds": []
+            "courseJoinIds": [1, 3, 6, 7, 11, 13, 15, 18, 20]
         }
     ],
     "courses": [
@@ -139,7 +139,7 @@
             "poster": "https://hocvienit.vn/wp-content/uploads/2020/09/khoa-hoc-lap-trinh-java-can-ban-1024x546.jpg",
             "name": "Khóa học Lập trình căn bản",
             "description": "Khóa học Lập trình căn bản cung cấp những kiến thức cơ bản về lập trình cho người mới bắt đầu. Bạn sẽ học về các ngôn ngữ lập trình phổ biến như C, Java hoặc Python. Khóa học sẽ giúp bạn hiểu về cú pháp lập trình, khái niệm cơ bản và cách thực hiện các tác vụ đơn giản thông qua các bài tập thực hành.",
-            "studentsCount": "10",
+            "studentsCount": 10,
             "code": "",
             "exercises": [
                 {
@@ -197,7 +197,7 @@
                     "score": "100"
                 }
             ],
-            "userManagerId": "Nguyen Hong Hieu",
+            "userManagerId": 11,
             "studentIds": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
         },
         {
