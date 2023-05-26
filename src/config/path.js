@@ -2,6 +2,7 @@ const path = {
     login: '/login',
     home: '/',
     classes: '/classes',
+    myclasses: '/myclasses',
     allClasses: '/allclasses',
     search: '/search',
     course: '/course/:id',

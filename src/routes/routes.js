@@ -12,6 +12,7 @@ const publicRoutes = [
     { path: config.path.login, component: Login, layout: null },
     { path: config.path.home, component: Home },
     { path: config.path.classes, component: Classes },
+    { path: config.path.myclasses, component: Classes },
     { path: config.path.allClasses, component: AllClasses },
     { path: config.path.search, component: Search },
     { path: config.path.course, component: ClassDetail },

@@ -9,7 +9,8 @@ import styles from './Home.module.scss';
 const cx = classNames.bind(styles);
 
 function Home() {
-    const [courseList, setCourseList] = useState([]);
+    const [courseList, setCourseList] = useState();
+    const [privateCourses, setPrivateCourses] = useState();
 
     useEffect(() => {
         request
@@ -21,12 +22,20 @@ function Home() {
             .then((res) => {
                 setCourseList(res.data);
             });
+        request
+            .get('privateCourses', {
+                params: {
+                    _limit: 20,
+                },
+            })
+            .then((res) => setPrivateCourses(res.data));
     }, []);
 
     return (
         <div className={cx('wrapper')}>
             {!!localStorage.getItem('user') || <Navigate to="/login" />}
-            <ListItem courseList={courseList} title="Lớp học miễn phí" />
+            <ListItem courseList={courseList} title="Lớp học công khai" />
+            {courseList && <ListItem courseList={privateCourses} title="Lớp học riêng tư" />}
         </div>
     );
 }

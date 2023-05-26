@@ -1,36 +1,41 @@
 import classNames from 'classnames/bind';
-import { useContext, useEffect, useState } from 'react';
-import { Navigate } from 'react-router-dom';
+import { useEffect, useState } from 'react';
+import { Navigate, useLocation } from 'react-router-dom';
 
 import request from '~/utils/request';
 import ListItem from '../components/ListItem/ListItem';
 import styles from './Classes.module.scss';
-import { UserContext } from '~/App';
 
 const cx = classNames.bind(styles);
 
 function Classes() {
-    const [courseIds, setCourseIds] = useState([]);
     const [courses, setCourses] = useState([]);
-    const user = useContext(UserContext);
+    let courseJoinList = [];
+    let courseManageList = [];
+    const courseJoinIds = JSON.parse(localStorage.getItem('user')).courseJoinIds;
+    const courseManageIds = JSON.parse(localStorage.getItem('user')).courseManageIds;
 
     useEffect(() => {
         request.get('/courses').then((res) => setCourses(res.data));
-        request.get('users/1').then((res) => setCourseIds(res.data.courseJoinIds));
     }, []);
 
-    const courseList = courses.filter((course) => courseIds.includes(course.id));
+    courses.forEach((course) => {
+        if (courseJoinIds.includes(course.id)) {
+            courseJoinList.push(course);
+        } else if (courseManageIds.includes(course.id)) {
+            courseManageList.push(course);
+        }
+    });
 
     return (
         <>
             {!!localStorage.getItem('user') || <Navigate to="/login" />}
-            {user && (
-                <UserContext.Provider value={user}>
-                    <div className={cx('wrapper')}>
-                        <ListItem courseList={courseList} title="Lớp học của tôi" />
-                    </div>
-                </UserContext.Provider>
-            )}
+            <div className={cx('wrapper')}>
+                <ListItem
+                    courseList={useLocation().pathname === '/classes' ? courseJoinList : courseManageList}
+                    title="Lớp học của tôi"
+                />
+            </div>
         </>
     );
 }

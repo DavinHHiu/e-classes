@@ -55,6 +55,99 @@
     text-transform: uppercase;
     box-shadow: 0 0 10px rgb(22 24 35 /0.35);
 }
+//Show pop up
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(22 24 35 / 0.75);
+    z-index: 20;
+}
+.pop-up {
+    position: fixed;
+    top: 25%;
+    left: 25%;
+    width: 50%;
+    height: 50%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    z-index: 20;
+    transition: all 0.3s ease-in-out;
+}
+
+.background-side {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.code-side {
+    flex: 1;
+    padding: 10px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.welcome {
+    width: 50%;
+}
+
+.pop-up-title {
+    margin-top: -50px;
+}
+
+.pop-up-input {
+    width: 75%;
+    padding: 12px 24px;
+    font-size: 1.5rem;
+    border-radius: 8px;
+    border: 2px solid transparent;
+    background-color: rgb(22 24 35/0.05);
+
+    &:focus {
+        border: 2px solid rgb(32 177 255);
+        box-shadow: 0 0 5px rgb(32 177 255);
+    }
+}
+
+.pop-up-btn {
+    margin-top: 20px;
+    display: flex;
+}
+
+.discard,
+.submit {
+    font-size: 1.4rem;
+    padding: 10px 30px;
+    min-width: 60px;
+    width: 120px;
+    color: rgb(22 24 35/0.7);
+    border-radius: 4px;
+}
+
+.submit {
+    color: var(--white);
+    background-color: rgb(32 177 255);
+}
+
+.discard {
+    margin-right: 16px;
+    background-color: #f6f6f6;
+}
+
+.error {
+    position: absolute;
+    bottom: 29%;
+    font-size: 1.4rem;
+    font-style: italic;
+    color: #ff5555;
+}
 
 @media (max-width: 1113px) {
     .wrapper {

@@ -1,6 +1,7 @@
 import classNames from 'classnames/bind';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
+import { useLocation } from 'react-router-dom';
 
 import Button from '~/components/Button/Button';
 import CourseItem from '~/components/CourseItem/CourseItem';
@@ -13,14 +14,14 @@ function ListItem({ courseList, title }) {
         <section className={cx('free-classes')}>
             <div className={cx('header')}>
                 <span className={cx('title')}>{title}</span>
-                <Button
+                {useLocation().pathname === '/' && <Button
                     className={cx('more')}
                     rightIcon={<FontAwesomeIcon className={cx('more-icon')} icon={faChevronRight} />}
                     more
                     to="/allclasses?page=1"
                 >
                     Xem tất cả
-                </Button>
+                </Button>}
             </div>
             <div className={cx('course-items')}>
                 {courseList &&

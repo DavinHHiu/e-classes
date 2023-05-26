@@ -3,14 +3,17 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBold, faItalic, faUnderline } from '@fortawesome/free-solid-svg-icons';
 import { useRef, useState } from 'react';
 
+import request from '~/utils/request';
 import Button from '~/components/Button/Button';
 import styles from './Notification.module.scss';
+import OldNotifications from './OldNotification/OldNotifications';
 
 const cx = classNames.bind(styles);
 
-function Notification({ avatar }) {
+function Notification({ course, user }) {
     const [active, setActive] = useState(false);
     const [textBox, setTextBox] = useState('');
+    const [oldNotis, setOldNotis] = useState(course.notifications);
 
     const inputRef = useRef();
 
@@ -27,13 +30,34 @@ function Notification({ avatar }) {
         setActive(false);
     };
 
+    const handlePost = (e) => {
+        const notis = course.notifications;
+        const newNotification = {
+            id: notis.length > 0 ? notis[notis.length - 1].id + 1 : 1,
+            nameAuthor: user.name,
+            avatarAuthor: user.avatar,
+            date: new Date().toLocaleDateString('en-GB'),
+            content: textBox,
+        };
+        console.log(newNotification);
+        request
+            .patch(`courses/${course.id}`, {
+                ...course,
+                notifications: [...course.notifications, newNotification],
+            })
+            .then((res) => setOldNotis(res.data.notifications))
+            .catch((err) => console.log(err));
+        e.stopPropagation();
+        setActive(false);
+    };
+
     return (
         <div className={cx('wrapper')}>
             <div className={cx('new-noti', { active: active })} onClick={handleOpen}>
                 {!active && (
                     <>
                         <div className={cx('avatar-container')}>
-                            <img className={cx('avatar')} src={avatar} alt="avatar" />
+                            <img className={cx('avatar')} src={user.avatar} alt="avatar" />
                         </div>
                         <div className={cx('inner-text')}>Thông báo nội dung nào đó cho lớp học của bạn</div>
                     </>
@@ -56,13 +80,16 @@ function Notification({ avatar }) {
                             <Button className={cx('discard')} onClick={handleCancel}>
                                 Hủy
                             </Button>
-                            <Button disable={!textBox} className={cx('submit')}>
+                            <Button disable={!textBox} className={cx('submit')} onClick={handlePost}>
                                 Đăng
                             </Button>
                         </div>
                     </div>
                 )}
             </div>
+            {oldNotis && oldNotis.map((oldNoti) => (
+                <OldNotifications key={oldNoti.id} oldNoti={oldNoti} />
+            ))}
         </div>
     );
 }

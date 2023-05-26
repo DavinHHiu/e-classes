@@ -1,8 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUsers } from '@fortawesome/free-solid-svg-icons';
 import classNames from 'classnames/bind';
-import { useContext } from 'react';
-import { UserContext } from '~/App';
 
 import Button from '../Button/Button';
 import styles from './CourseItem.module.scss';
@@ -10,21 +8,19 @@ import styles from './CourseItem.module.scss';
 const cx = classNames.bind(styles);
 
 function CourseItem({ src, courseId, title, studentsCount, className }) {
-    let courseIds;
-    if (useContext(UserContext)) {
-        // eslint-disable-next-line react-hooks/rules-of-hooks
-        courseIds = useContext(UserContext).courseJoinIds;
-    }
+    const courseJoinIds = JSON.parse(localStorage.getItem('user')).courseJoinIds;
+    const courseManageIds = JSON.parse(localStorage.getItem('user')).courseManageIds;
     let path = `/course/${courseId}`;
 
-    if (courseIds && courseIds.includes(courseId)) path = `/learning/notification/${courseId}`;
+    if (courseJoinIds && courseJoinIds.includes(courseId)) path = `/learning/notification/${courseId}`;
+    if (courseManageIds && courseManageIds.includes(courseId)) path = `/learning/notification/${courseId}`;
 
     return (
-        courseIds && (
+        courseJoinIds && courseManageIds && (
             <div className={cx('wrapper', className)}>
                 <Button className={cx('poster')} to={path} style={{ backgroundImage: `url(${src})` }}>
                     <Button className={cx('join-btn')}>
-                        {courseIds.includes(courseId) ? 'Vào lớp học' : 'Xem khóa học'}
+                        {(courseJoinIds.includes(courseId) || courseManageIds.includes(courseId)) ? 'Vào lớp học' : 'Xem khóa học'}
                     </Button>
                 </Button>
 

@@ -1,5 +1,5 @@
 import classNames from 'classnames/bind';
-
+import { useLocation } from 'react-router-dom';
 
 import Header from '../components/Header';
 import Sidebar from '../components/Sidebar';
@@ -12,7 +12,7 @@ function MainLayout({ children }) {
         <div className={cx('wrapper')}>
             <Header />
             <div className={cx('container')}>
-                <Sidebar />
+                {!useLocation().pathname.startsWith('/learning') && <Sidebar />}
                 <div className={cx('content')}>{children}</div>
             </div>
         </div>

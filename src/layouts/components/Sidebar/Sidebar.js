@@ -1,4 +1,4 @@
-import { faHome, faSchool } from '@fortawesome/free-solid-svg-icons';
+import { faChalkboardTeacher, faHome, faSchool } from '@fortawesome/free-solid-svg-icons';
 import classNames from 'classnames/bind'
 
 import Menu from './Menu/Menu';
@@ -12,6 +12,7 @@ function Sidebar() {
         <Menu>
             <MenuItem title="Home" icon={faHome} to={config.path.home}></MenuItem>
             <MenuItem title="Classes" icon={faSchool} to={config.path.classes}></MenuItem>
+            <MenuItem title="My classes" icon={faChalkboardTeacher } to={config.path.myclasses}></MenuItem>
         </Menu>
     </aside>;
 }

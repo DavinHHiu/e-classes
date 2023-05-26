@@ -1,446 +1,583 @@
 {
-    "users": [
+  "users": [
+    {
+      "id": 1,
+      "name": "Leanne Graham",
+      "userName": "Bret",
+      "password": "123",
+      "avatar": "https://w7.pngwing.com/pngs/867/134/png-transparent-giant-panda-dog-cat-avatar-fox-animal-tag-mammal-animals-carnivoran-thumbnail.png",
+      "email": "Sincere@april.biz",
+      "phone": "(404) 555-3456",
+      "role": "student",
+      "courseManageIds": [],
+      "courseJoinIds": [
+        1,
+        3,
+        6,
+        7,
+        11,
+        13,
+        15,
+        18,
+        20
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Ervin Howell",
+      "userName": "Antonette",
+      "password": "123",
+      "avatar": "https://w7.pngwing.com/pngs/867/134/png-transparent-giant-panda-dog-cat-avatar-fox-animal-tag-mammal-animals-carnivoran-thumbnail.png",
+      "email": "Shanna@melissa.tv",
+      "phone": "(617) 555-9012",
+      "role": "student",
+      "courseManageIds": [],
+      "courseJoinIds": []
+    },
+    {
+      "id": 3,
+      "name": "Clementine Bauch",
+      "userName": "Samantha",
+      "password": "123",
+      "avatar": "https://w7.pngwing.com/pngs/867/134/png-transparent-giant-panda-dog-cat-avatar-fox-animal-tag-mammal-animals-carnivoran-thumbnail.png",
+      "email": "Nathan@yesenia.net",
+      "phone": "(212) 555-6789",
+      "role": "student",
+      "courseManageIds": [],
+      "courseJoinIds": []
+    },
+    {
+      "id": 4,
+      "name": "Patricia Lebsack",
+      "userName": "Karianne",
+      "password": "123",
+      "avatar": "https://w7.pngwing.com/pngs/867/134/png-transparent-giant-panda-dog-cat-avatar-fox-animal-tag-mammal-animals-carnivoran-thumbnail.png",
+      "email": "Julianne.OConner@kory.org",
+      "phone": "(786) 555-2345",
+      "role": "student",
+      "courseManageIds": [],
+      "courseJoinIds": []
+    },
+    {
+      "id": 5,
+      "name": "Chelsey Dietrich",
+      "userName": "Kamren",
+      "password": "123",
+      "avatar": "https://w7.pngwing.com/pngs/867/134/png-transparent-giant-panda-dog-cat-avatar-fox-animal-tag-mammal-animals-carnivoran-thumbnail.png",
+      "email": "Lucio_Hettinger@annie.ca",
+      "phone": "(254)954-1289",
+      "role": "student",
+      "courseManageIds": [],
+      "courseJoinIds": []
+    },
+    {
+      "id": 6,
+      "name": "Mrs. Dennis Schulist",
+      "userName": "Leopoldo_Corkery",
+      "password": "123",
+      "avatar": "https://w7.pngwing.com/pngs/867/134/png-transparent-giant-panda-dog-cat-avatar-fox-animal-tag-mammal-animals-carnivoran-thumbnail.png",
+      "email": "Karley_Dach@jasper.info",
+      "phone": "(713) 555-7890",
+      "role": "student",
+      "courseManageIds": [],
+      "courseJoinIds": []
+    },
+    {
+      "id": 7,
+      "name": "Kurtis Weissnat",
+      "userName": "Elwyn.Skiles",
+      "password": "123",
+      "avatar": "https://w7.pngwing.com/pngs/867/134/png-transparent-giant-panda-dog-cat-avatar-fox-animal-tag-mammal-animals-carnivoran-thumbnail.png",
+      "email": "Telly.Hoeger@billy.biz",
+      "phone": "210.067.6132",
+      "role": "student",
+      "courseManageIds": [],
+      "courseJoinIds": []
+    },
+    {
+      "id": 8,
+      "name": "Nicholas Runolfsdottir V",
+      "userName": "Maxime_Nienow",
+      "password": "123",
+      "avatar": "https://w7.pngwing.com/pngs/867/134/png-transparent-giant-panda-dog-cat-avatar-fox-animal-tag-mammal-animals-carnivoran-thumbnail.png",
+      "email": "Sherwood@rosamond.me",
+      "phone": "(415) 555-5678",
+      "role": "student",
+      "courseManageIds": [],
+      "courseJoinIds": []
+    },
+    {
+      "id": 9,
+      "name": "Glenna Reichert",
+      "userName": "Delphine",
+      "password": "123",
+      "avatar": "https://w7.pngwing.com/pngs/867/134/png-transparent-giant-panda-dog-cat-avatar-fox-animal-tag-mammal-animals-carnivoran-thumbnail.png",
+      "email": "Chaim_McDermott@dana.io",
+      "phone": "(202) 555-0123",
+      "role": "student",
+      "courseManageIds": [],
+      "courseJoinIds": []
+    },
+    {
+      "id": 10,
+      "name": "Clementina DuBuque",
+      "userName": "Moriah.Stanton",
+      "password": "123",
+      "avatar": "https://w7.pngwing.com/pngs/867/134/png-transparent-giant-panda-dog-cat-avatar-fox-animal-tag-mammal-animals-carnivoran-thumbnail.png",
+      "email": "Rey.Padberg@karina.biz",
+      "phone": "024-648-3804",
+      "role": "student",
+      "courseManageIds": [],
+      "courseJoinIds": []
+    },
+    {
+      "id": 11,
+      "name": "Nguuyễn Hồng Hiếu",
+      "userName": "HongHiu",
+      "password": "123",
+      "avatar": "https://w7.pngwing.com/pngs/867/134/png-transparent-giant-panda-dog-cat-avatar-fox-animal-tag-mammal-animals-carnivoran-thumbnail.png",
+      "email": "honghieu2208@gmail.com",
+      "phone": "024-648-3804",
+      "role": "student",
+      "courseManageIds": [8, 12, 14, 16, 17, 19],
+      "courseJoinIds": [
+        1,
+        3,
+        6,
+        7,
+        11,
+        13,
+        15,
+        18,
+        20,
+        5,
+        2,
+        4,
+        9,
+        10
+      ]
+    }
+  ],
+  "courses": [
+    {
+      "id": 1,
+      "poster": "https://hocvienit.vn/wp-content/uploads/2020/09/khoa-hoc-lap-trinh-java-can-ban-1024x546.jpg",
+      "name": "Khóa học Lập trình căn bản",
+      "description": "Khóa học Lập trình căn bản cung cấp những kiến thức cơ bản về lập trình cho người mới bắt đầu. Bạn sẽ học về các ngôn ngữ lập trình phổ biến như C, Java hoặc Python. Khóa học sẽ giúp bạn hiểu về cú pháp lập trình, khái niệm cơ bản và cách thực hiện các tác vụ đơn giản thông qua các bài tập thực hành.",
+      "studentsCount": 10,
+      "code": "",
+      "notifications": [
         {
-            "id": 1,
-            "name": "Leanne Graham",
-            "userName": "Bret",
-            "password": "123",
-            "avatar": "https://w7.pngwing.com/pngs/867/134/png-transparent-giant-panda-dog-cat-avatar-fox-animal-tag-mammal-animals-carnivoran-thumbnail.png",
-            "email": "Sincere@april.biz",
-            "phone": "(404) 555-3456",
-            "role": "student",
-            "courseManageIds": [],
-            "courseJoinIds": [1, 3, 6, 7, 11, 13, 15, 18, 20]
+          "id": 1,
+          "nameAuthor": "Nguuyễn Hồng Hiếu",
+          "avatarAuthor": "https://w7.pngwing.com/pngs/867/134/png-transparent-giant-panda-dog-cat-avatar-fox-animal-tag-mammal-animals-carnivoran-thumbnail.png",
+          "date": "26/05/2023",
+          "content": "alo alo\nalo alo\nvừa 11h11 đồng hồ đg đổ chuông liệu anh có nhớ em như cái em nhớ anh"
         },
         {
-            "id": 2,
-            "name": "Ervin Howell",
-            "userName": "Antonette",
-            "password": "123",
-            "avatar": "https://w7.pngwing.com/pngs/867/134/png-transparent-giant-panda-dog-cat-avatar-fox-animal-tag-mammal-animals-carnivoran-thumbnail.png",
-            "email": "Shanna@melissa.tv",
-            "phone": "(617) 555-9012",
-            "role": "student",
-            "courseManageIds": [],
-            "courseJoinIds": []
+          "id": 2,
+          "nameAuthor": "Nguuyễn Hồng Hiếu",
+          "avatarAuthor": "https://w7.pngwing.com/pngs/867/134/png-transparent-giant-panda-dog-cat-avatar-fox-animal-tag-mammal-animals-carnivoran-thumbnail.png",
+          "date": "26/05/2023",
+          "content": "Một số lưu ý trong buổi trình bày:\n- Thầy đã tạo sẵn các phòng theo nhóm, các bạn vào TranS tự động vào phòng theo nhóm theo STT. Thầy sẽ vào từng phòng để nghe trình bày.\n- Các nhóm sẽ trình bày theo thứ tự submit chứ ko phải thứ tự từ 1.\n- Các bạn phải chuẩn bị sẵn laptop để sẵn sàng trình bày vào phần được hỏi. Thầy đã xem qua báo cáo và khả năng của mỗi bạn nên sẽ hỏi nhanh và trực tiếp vào phần mỗi người làm.\n- Hôm nay có thể sẽ không hỏi hết thì các nhóm còn lại sẽ được trình bày tiếp vào ngày T7 tuần này (sẽ thông báo sau)."
         },
         {
-            "id": 3,
-            "name": "Clementine Bauch",
-            "userName": "Samantha",
-            "password": "123",
-            "avatar": "https://w7.pngwing.com/pngs/867/134/png-transparent-giant-panda-dog-cat-avatar-fox-animal-tag-mammal-animals-carnivoran-thumbnail.png",
-            "email": "Nathan@yesenia.net",
-            "phone": "(212) 555-6789",
-            "role": "student",
-            "courseManageIds": [],
-            "courseJoinIds": []
+          "id": 3,
+          "nameAuthor": "Nguuyễn Hồng Hiếu",
+          "avatarAuthor": "https://w7.pngwing.com/pngs/867/134/png-transparent-giant-panda-dog-cat-avatar-fox-animal-tag-mammal-animals-carnivoran-thumbnail.png",
+          "date": "26/05/2023",
+          "content": "Thầy gửi các bạn đường link của lớp học nhé! Sáng mai bắt đầu từ 8h00\n\nhttps://meet.google.com/duk-oybb-jxc\n\nĐăng nhập bằng tài khoản của cá nhân!"
         },
         {
-            "id": 4,
-            "name": "Patricia Lebsack",
-            "userName": "Karianne",
-            "password": "123",
-            "avatar": "https://w7.pngwing.com/pngs/867/134/png-transparent-giant-panda-dog-cat-avatar-fox-animal-tag-mammal-animals-carnivoran-thumbnail.png",
-            "email": "Julianne.OConner@kory.org",
-            "phone": "(786) 555-2345",
-            "role": "student",
-            "courseManageIds": [],
-            "courseJoinIds": []
-        },
-        {
-            "id": 5,
-            "name": "Chelsey Dietrich",
-            "userName": "Kamren",
-            "password": "123",
-            "avatar": "https://w7.pngwing.com/pngs/867/134/png-transparent-giant-panda-dog-cat-avatar-fox-animal-tag-mammal-animals-carnivoran-thumbnail.png",
-            "email": "Lucio_Hettinger@annie.ca",
-            "phone": "(254)954-1289",
-            "role": "student",
-            "courseManageIds": [],
-            "courseJoinIds": []
-        },
-        {
-            "id": 6,
-            "name": "Mrs. Dennis Schulist",
-            "userName": "Leopoldo_Corkery",
-            "password": "123",
-            "avatar": "https://w7.pngwing.com/pngs/867/134/png-transparent-giant-panda-dog-cat-avatar-fox-animal-tag-mammal-animals-carnivoran-thumbnail.png",
-            "email": "Karley_Dach@jasper.info",
-            "phone": "(713) 555-7890",
-            "role": "student",
-            "courseManageIds": [],
-            "courseJoinIds": []
-        },
-        {
-            "id": 7,
-            "name": "Kurtis Weissnat",
-            "userName": "Elwyn.Skiles",
-            "password": "123",
-            "avatar": "https://w7.pngwing.com/pngs/867/134/png-transparent-giant-panda-dog-cat-avatar-fox-animal-tag-mammal-animals-carnivoran-thumbnail.png",
-            "email": "Telly.Hoeger@billy.biz",
-            "phone": "210.067.6132",
-            "role": "student",
-            "courseManageIds": [],
-            "courseJoinIds": []
-        },
-        {
-            "id": 8,
-            "name": "Nicholas Runolfsdottir V",
-            "userName": "Maxime_Nienow",
-            "password": "123",
-            "avatar": "https://w7.pngwing.com/pngs/867/134/png-transparent-giant-panda-dog-cat-avatar-fox-animal-tag-mammal-animals-carnivoran-thumbnail.png",
-            "email": "Sherwood@rosamond.me",
-            "phone": "(415) 555-5678",
-            "role": "student",
-            "courseManageIds": [],
-            "courseJoinIds": []
-        },
-        {
-            "id": 9,
-            "name": "Glenna Reichert",
-            "userName": "Delphine",
-            "password": "123",
-            "avatar": "https://w7.pngwing.com/pngs/867/134/png-transparent-giant-panda-dog-cat-avatar-fox-animal-tag-mammal-animals-carnivoran-thumbnail.png",
-            "email": "Chaim_McDermott@dana.io",
-            "phone": "(202) 555-0123",
-            "role": "student",
-            "courseManageIds": [],
-            "courseJoinIds": []
-        },
-        {
-            "id": 10,
-            "name": "Clementina DuBuque",
-            "userName": "Moriah.Stanton",
-            "password": "123",
-            "avatar": "https://w7.pngwing.com/pngs/867/134/png-transparent-giant-panda-dog-cat-avatar-fox-animal-tag-mammal-animals-carnivoran-thumbnail.png",
-            "email": "Rey.Padberg@karina.biz",
-            "phone": "024-648-3804",
-            "role": "student",
-            "courseManageIds": [],
-            "courseJoinIds": []
-        },
-        {
-            "id": 11,
-            "name": "Nguuyễn Hồng Hiếu",
-            "userName": "HongHiu",
-            "password": "123",
-            "avatar": "https://w7.pngwing.com/pngs/867/134/png-transparent-giant-panda-dog-cat-avatar-fox-animal-tag-mammal-animals-carnivoran-thumbnail.png",
-            "email": "honghieu2208@gmail.com",
-            "phone": "024-648-3804",
-            "role": "student",
-            "courseManageIds": [],
-            "courseJoinIds": [1, 3, 6, 7, 11, 13, 15, 18, 20]
+          "id": 4,
+          "nameAuthor": "Nguuyễn Hồng Hiếu",
+          "avatarAuthor": "https://w7.pngwing.com/pngs/867/134/png-transparent-giant-panda-dog-cat-avatar-fox-animal-tag-mammal-animals-carnivoran-thumbnail.png",
+          "date": "26/05/2023",
+          "content": "Thầy gửi các bạn đường link của lớp học nhé! Sáng mai bắt đầu từ 8h00\n\nhttps://meet.google.com/duk-oybb-jxc\n\nĐăng nhập bằng tài khoản của cá nhân!"
         }
-    ],
-    "courses": [
+      ],
+      "exercises": [
         {
-            "id": 1,
-            "poster": "https://hocvienit.vn/wp-content/uploads/2020/09/khoa-hoc-lap-trinh-java-can-ban-1024x546.jpg",
-            "name": "Khóa học Lập trình căn bản",
-            "description": "Khóa học Lập trình căn bản cung cấp những kiến thức cơ bản về lập trình cho người mới bắt đầu. Bạn sẽ học về các ngôn ngữ lập trình phổ biến như C, Java hoặc Python. Khóa học sẽ giúp bạn hiểu về cú pháp lập trình, khái niệm cơ bản và cách thực hiện các tác vụ đơn giản thông qua các bài tập thực hành.",
-            "studentsCount": 10,
-            "code": "",
-            "exercises": [
-                {
-                    "id": "1",
-                    "name": "Bài TH3 Tổ 2",
-                    "content": "- Chọn 1 đối tượng dữ liệu trong BTL và thực hiện chức năng quản lý danh sách, thêm, xoá, sửa cho đối tượng đó (tương tự Product Maintenance). \\n - Sử dụng Spring Data JPA, Spring MVC hoặc Rest.",
-                    "postDate": "6 thg 5",
-                    "dueDate": "11:00 6 thg 5",
-                    "author": "Duc Duong",
-                    "score": "100"
-                },
-                {
-                    "id": "2",
-                    "name": "Bài tập Spring Data JPA",
-                    "content": "Cải tiếng ứng dụng TacoCloud sử dụng Spring Data JPA như hướng dẫn trong slide và submit",
-                    "postDate": "13 thg 4",
-                    "dueDate": "09:00 13 thg 4",
-                    "author": "Duc Duong",
-                    "score": "100"
-                },
-                {
-                    "id": "3",
-                    "name": "Bài TH2 Tổ 2",
-                    "content": "- Bài TH 2 các bạn làm lại yêu cầu của bài TH 1 (Product Maintenance), nhưng dùng Spring thay vì Servlet/JSP \\n - Các phần lưu dữ liệu tạm thời bỏ qua do chưa học đến thao tác DB trong Spring , chỉ hiện danh sách và các form. Khi submit form chỉ cần in tham số ra output (như ứng dụng Taco Cloud) \\n - Phần hiển thị danh sách, danh sách SP tạm thời hard code danh sách (tương tự ứng dụng Taco Cloud)",
-                    "postDate": "8 thg 4",
-                    "dueDate": "11:00 8 thg 4",
-                    "author": "Duc Duong",
-                    "score": "100"
-                },
-                {
-                    "id": "4",
-                    "name": "Bài TH2 Tổ 1",
-                    "content": "- Bài TH 2 các bạn làm lại yêu cầu của bài TH 1 (Product Maintenance), nhưng dùng Spring thay vì Servlet/JSP \\n - Các phần lưu dữ liệu tạm thời bỏ qua do chưa học đến thao tác DB trong Spring , chỉ hiện danh sách và các form. Khi submit form chỉ cần in tham số ra output (như ứng dụng Taco Cloud) \\n - Phần hiển thị danh sách, danh sách SP tạm thời hard code danh sách (tương tự ứng dụng Taco Cloud)",
-                    "postDate": "1 thg 4",
-                    "dueDate": "11:00 1 thg 4",
-                    "author": "Duc Duong",
-                    "score": "100"
-                },
-                {
-                    "id": "5",
-                    "name": "Bài tập Servlet 2",
-                    "content": "Làm theo yêu cầu và nộp file .zip toàn bộ Project",
-                    "postDate": "2 thg 3",
-                    "dueDate": "09:00 2 thg 3",
-                    "author": "Duc Duong",
-                    "score": "100"
-                },
-                {
-                    "id": "6",
-                    "name": "Bài tập JSP",
-                    "content": "Hoàn thiện ứng dụng Survey và submit",
-                    "postDate": "9 thg 3",
-                    "dueDate": "09:00 9 thg 3",
-                    "author": "Duc Duong",
-                    "score": "100"
-                }
-            ],
-            "userManagerId": 11,
-            "studentIds": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+          "id": "1",
+          "name": "Bài TH3 Tổ 2",
+          "content": "- Chọn 1 đối tượng dữ liệu trong BTL và thực hiện chức năng quản lý danh sách, thêm, xoá, sửa cho đối tượng đó (tương tự Product Maintenance). \\n - Sử dụng Spring Data JPA, Spring MVC hoặc Rest.",
+          "postDate": "6 thg 5",
+          "dueDate": "11:00 6 thg 5",
+          "author": "Duc Duong",
+          "score": "100"
         },
         {
-            "id": 2,
-            "poster": "https://cdn1.edumall.io/640/k-5768aeb1047c995f75fdbf6b/20170817-anhdaidienmoi_thinh/uni03.png",
-            "name": "Khóa học Phân tích và Thiết kế Hệ thống",
-            "description": "Khóa học Phân tích và Thiết kế Hệ thống tập trung vào quá trình phân tích, thiết kế và xây dựng hệ thống thông tin. Bạn sẽ học về phương pháp phân tích yêu cầu, mô hình hóa dữ liệu, quy trình thiết kế hệ thống và cách tạo các biểu đồ luồng công việc. Khóa học sẽ giúp bạn có những kỹ năng cần thiết để phát triển các hệ thống thông tin hiệu quả.",
-            "studentsCount": "235",
-            "code": "",
-            "exerciseIds": [],
-            "userManagerId": "",
-            "studentIds": []
+          "id": "2",
+          "name": "Bài tập Spring Data JPA",
+          "content": "Cải tiếng ứng dụng TacoCloud sử dụng Spring Data JPA như hướng dẫn trong slide và submit",
+          "postDate": "13 thg 4",
+          "dueDate": "09:00 13 thg 4",
+          "author": "Duc Duong",
+          "score": "100"
         },
         {
-            "id": 3,
-            "poster": "https://zendvn.com/images/coursesOneToOne/Tewq1H9k5l.jpg",
-            "name": "Khóa học Quản trị Cơ sở dữ liệu",
-            "description": "Khóa học Quản trị Cơ sở dữ liệu tập trung vào quản lý và thiết kế cơ sở dữ liệu. Bạn sẽ học về các khái niệm cơ bản của cơ sở dữ liệu, cách thiết kế bảng, truy vấn dữ liệu và tối ưu hóa hiệu suất. Khóa học sẽ giúp bạn hiểu về hệ quản trị cơ sở dữ liệu phổ biến như MySQL hoặc Oracle và sử dụng chúng trong việc xây dựng và quản lý cơ sở dữ liệu.",
-            "studentsCount": "567",
-            "code": "",
-            "exerciseIds": [],
-            "userManagerId": "",
-            "studentIds": []
+          "id": "3",
+          "name": "Bài TH2 Tổ 2",
+          "content": "- Bài TH 2 các bạn làm lại yêu cầu của bài TH 1 (Product Maintenance), nhưng dùng Spring thay vì Servlet/JSP \\n - Các phần lưu dữ liệu tạm thời bỏ qua do chưa học đến thao tác DB trong Spring , chỉ hiện danh sách và các form. Khi submit form chỉ cần in tham số ra output (như ứng dụng Taco Cloud) \\n - Phần hiển thị danh sách, danh sách SP tạm thời hard code danh sách (tương tự ứng dụng Taco Cloud)",
+          "postDate": "8 thg 4",
+          "dueDate": "11:00 8 thg 4",
+          "author": "Duc Duong",
+          "score": "100"
         },
         {
-            "id": 4,
-            "poster": "https://ivolunteervietnam.com/wp-content/uploads/2021/03/83bf45ffc89f4474dff60c40add99791.jpg",
-            "name": "Khóa học Mạng máy tính và An ninh mạng",
-            "description": "Khóa học Mạng máy tính và An ninh mạng tập trung vào các khái niệm cơ bản về mạng máy tính và bảo mật mạng. Bạn sẽ học về cấu trúc mạng, giao thức mạng, quản lý mạng và các biện pháp bảo mật như xác thực, mã hóa và bảo vệ chống lại các cuộc tấn công. Khóa học sẽ giúp bạn có kiến thức cần thiết để thiết kế, cấu hình và bảo vệ các hệ thống mạng.",
-            "studentsCount": "65",
-            "code": "",
-            "exerciseIds": [],
-            "userManagerId": "",
-            "studentIds": []
+          "id": "4",
+          "name": "Bài TH2 Tổ 1",
+          "content": "- Bài TH 2 các bạn làm lại yêu cầu của bài TH 1 (Product Maintenance), nhưng dùng Spring thay vì Servlet/JSP \\n - Các phần lưu dữ liệu tạm thời bỏ qua do chưa học đến thao tác DB trong Spring , chỉ hiện danh sách và các form. Khi submit form chỉ cần in tham số ra output (như ứng dụng Taco Cloud) \\n - Phần hiển thị danh sách, danh sách SP tạm thời hard code danh sách (tương tự ứng dụng Taco Cloud)",
+          "postDate": "1 thg 4",
+          "dueDate": "11:00 1 thg 4",
+          "author": "Duc Duong",
+          "score": "100"
         },
         {
-            "id": 5,
-            "poster": "https://viencongnghethongtin.fbu.edu.vn/wp-content/uploads/sites/4/2021/05/app-1.png",
-            "name": "Khóa học Phát triển Ứng dụng Di động",
-            "description": "Khóa học Phát triển Ứng dụng Di động tập trung vào việc học cách phát triển ứng dụng di động cho các nền tảng như iOS và Android. Bạn sẽ học về ngôn ngữ lập trình và framework như Swift hoặc Kotlin, và cách tạo giao diện người dùng.",
-            "studentsCount": "456",
-            "code": "",
-            "exerciseIds": [],
-            "userManagerId": "",
-            "studentIds": []
+          "id": "5",
+          "name": "Bài tập Servlet 2",
+          "content": "Làm theo yêu cầu và nộp file .zip toàn bộ Project",
+          "postDate": "2 thg 3",
+          "dueDate": "09:00 2 thg 3",
+          "author": "Duc Duong",
+          "score": "100"
         },
         {
-            "id": 6,
-            "poster": "https://ivolunteervietnam.com/wp-content/uploads/2021/03/077295cd9bab293d38dc7eea122753be.jpg",
-            "name": "Khóa học Trí tuệ nhân tạo",
-            "description": "Khóa học Trí tuệ nhân tạo tập trung vào việc hiểu về trí tuệ nhân tạo và ứng dụng của nó trong lĩnh vực công nghệ thông tin. Bạn sẽ học về các thuật toán và kỹ thuật như học máy, học sâu và xử lý ngôn ngữ tự nhiên. Khóa học này sẽ giúp bạn phát triển khả năng thiết kế và triển khai các hệ thống trí tuệ nhân tạo để giải quyết các vấn đề thực tế.",
-            "studentsCount": "452",
-            "code": "",
-            "exerciseIds": [],
-            "userManagerId": "",
-            "studentIds": []
-        },
-        {
-            "id": 7,
-            "poster": "https://static.ladipage.net/5ea25fb8965dbc32b290b128/multimedia-thumbnail-20210713091745.png",
-            "name": "Khóa học Thiết kế Đồ họa và Đa phương tiện",
-            "description": "Khóa học Thiết kế Đồ họa và Đa phương tiện tập trung vào việc phát triển kỹ năng thiết kế đồ họa và sử dụng các công cụ đa phương tiện. Bạn sẽ học về các phần mềm thiết kế như Adobe Photoshop, Illustrator và Premiere Pro, và cách tạo ra các hình ảnh, biểu đồ, video và âm thanh chất lượng cao. Khóa học này giúp bạn trở thành một người thiết kế đồ họa và đa phương tiện có kỹ năng sáng tạo và công nghệ.",
-            "studentsCount": "124",
-            "code": "",
-            "exerciseIds": [],
-            "userManagerId": "",
-            "studentIds": []
-        },
-        {
-            "id": 8,
-            "poster": "https://files.fullstack.edu.vn/f8-prod/courses/7.png",
-            "name": "Khóa học Quản lý Dự án Công nghệ thông tin",
-            "description": "Khóa học Quản lý Dự án Công nghệ thông tin tập trung vào việc học cách quản lý và điều hành các dự án công nghệ thông tin. Bạn sẽ học về các phương pháp quản lý dự án, lập kế hoạch, kiểm soát nguồn lực và tương tác với các thành viên trong dự án. Khóa học này giúp bạn trở thành một người quản lý dự án có khả năng xử lý các dự án công nghệ thông tin phức tạp và đạt được mục tiêu kỹ thuật và kinh doanh.",
-            "studentsCount": "432",
-            "code": "",
-            "exerciseIds": [],
-            "userManagerId": "",
-            "studentIds": []
-        },
-        {
-            "id": 9,
-            "poster": "https://ivolunteervietnam.com/wp-content/uploads/2021/03/e1daa26afae9e4c7a50c9209e3f8b894.jpg",
-            "name": "Khóa học An toàn thông tin",
-            "description": "Khóa học An toàn thông tin tập trung vào việc bảo vệ và đảm bảo tính bảo mật cho hệ thống thông tin. Bạn sẽ học về các nguyên tắc an toàn thông tin, phân tích rủi ro, phòng chống tấn công mạng, mã hóa và xác thực. Khóa học này giúp bạn có kiến thức cần thiết để đảm bảo an toàn thông tin và bảo vệ các dữ liệu quan trọng trong môi trường công nghệ thông tin",
-            "studentsCount": "112",
-            "code": "",
-            "exerciseIds": [],
-            "userManagerId": "",
-            "studentIds": []
-        },
-        {
-            "id": 10,
-            "poster": "https://m.mic.gov.vn/Upload_Moi/2022_vn02/20220323-ta1.jpeg",
-            "name": "Khóa học Trực tuyến về Công nghệ Blockchain",
-            "description": "Khóa học Trực tuyến về Công nghệ Blockchain tập trung vào việc cung cấp kiến thức về công nghệ Blockchain và ứng dụng của nó. Bạn sẽ học về cách hoạt động của Blockchain, cấu trúc dữ liệu phân tán, các giao thức và các ứng dụng của Blockchain trong lĩnh vực tài chính, chuỗi cung ứng và quản lý dữ liệu. Khóa học này sẽ giúp bạn hiểu và áp dụng công nghệ Blockchain trong các lĩnh vực khác nhau và khám phá tiềm năng sáng tạo của nó.",
-            "studentsCount": "346",
-            "code": "",
-            "exerciseIds": [],
-            "userManagerId": "",
-            "studentIds": []
-        },
-        {
-            "id": 11,
-            "poster": "https://kingmarketing.vn/wp-content/uploads/2022/06/img_60daf5f480a11-1280x720.jpg",
-            "name": "Khóa học Thương mại điện tử",
-            "description": "Khóa học Thương mại điện tử tập trung vào các khía cạnh của việc kinh doanh và giao dịch trực tuyến. Bạn sẽ học về cách xây dựng và quản lý một trang web thương mại điện tử, phát triển chiến lược tiếp thị trực tuyến, xử lý thanh toán và đảm bảo an toàn giao dịch. Khóa học này giúp bạn hiểu và áp dụng các phương pháp thành công trong lĩnh vực thương mại điện tử.",
-            "studentsCount": "346",
-            "code": "",
-            "exerciseIds": [],
-            "userManagerId": "",
-            "studentIds": []
-        },
-        {
-            "id": 12,
-            "poster": "https://files.fullstack.edu.vn/f8-prod/courses/7.png",
-            "name": "Khóa học Quản lý Dự án Phần mềm",
-            "description": "Khóa học Quản lý Dự án Phần mềm tập trung vào việc học cách quản lý và điều hành các dự án phát triển phần mềm. Bạn sẽ học về các phương pháp quản lý dự án, lập kế hoạch, kiểm soát nguồn lực và tương tác với các thành viên trong dự án. Khóa học này giúp bạn trở thành một người quản lý dự án có khả năng xử lý các dự án phần mềm phức tạp và đạt được mục tiêu kỹ thuật và kinh doanh.",
-            "studentsCount": "346",
-            "code": "",
-            "exerciseIds": [],
-            "userManagerId": "",
-            "studentIds": []
-        },
-        {
-            "id": 13,
-            "poster": "https://static.ybox.vn/2021/9/4/1631161138554-Kh%C3%B3a%20h%E1%BB%8Dc%20EXCEL%20Ph%C3%A2n%20T%C3%ADch%20D%E1%BB%AF%20Li%E1%BB%87u%20d%C3%A0nh%20cho%20nh%C3%A2n%20s%E1%BB%B1%20hi%E1%BB%87n%20%C4%91%E1%BA%A1i.png",
-            "name": "Khóa học Phân tích dữ liệu",
-            "description": "Khóa học Phân tích dữ liệu tập trung vào việc nắm bắt và phân tích thông tin từ các nguồn dữ liệu khác nhau. Bạn sẽ học về các phương pháp và công cụ để thu thập, xử lý và phân tích dữ liệu. Khóa học này giúp bạn phát triển khả năng hiểu và tận dụng thông tin từ dữ liệu để đưa ra quyết định thông minh và phân tích xu hướng kinh doanh.",
-            "studentsCount": "346",
-            "code": "",
-            "exerciseIds": [],
-            "userManagerId": "",
-            "studentIds": []
-        },
-        {
-            "id": 14,
-            "poster": "https://hanngutracviet.com/uploads/tai-lieu/2017_09/cntt.jpg",
-            "name": "Khóa học Thực tập Công nghệ thông tin",
-            "description": "Khóa học Thực tập Công nghệ thông tin cung cấp cơ hội cho sinh viên hoặc người mới tốt nghiệp để thực hành và áp dụng kiến thức đã học trong môi trường thực tế. Bạn sẽ có cơ hội làm việc trong một dự án thực tế, hợp tác với các chuyên gia và áp dụng các kỹ năng công nghệ thông tin vào công việc hàng ngày. Khóa học này giúp bạn có kinh nghiệm thực tế và chuẩn bị cho sự nghiệp.",
-            "studentsCount": "346",
-            "code": "",
-            "exerciseIds": [],
-            "userManagerId": "",
-            "studentIds": []
-        },
-        {
-            "id": 15,
-            "poster": "https://files.fullstack.edu.vn/f8-prod/courses/7.png",
-            "name": "Khóa học Hệ điều hành",
-            "description": "Khóa học Hệ điều hành tập trung vào việc hiểu và làm việc với các hệ điều hành như Windows, Linux và macOS. Bạn sẽ học về cấu trúc hệ điều hành, quản lý tài nguyên, quá trình và luồng điều khiển. Khóa học này giúp bạn có kiến thức cơ bản và nâng cao về cách hoạt động và quản lý hệ điều hành.",
-            "studentsCount": "346",
-            "code": "",
-            "exerciseIds": [],
-            "userManagerId": "",
-            "studentIds": []
-        },
-        {
-            "id": 16,
-            "poster": "https://athena.edu.vn/content/uploads/khoa-hoc-quan-tri-mang-co-ban.jpg",
-            "name": "Khóa học Quản lý Hệ thống và Mạng",
-            "description": "Khóa học Quản lý Hệ thống và Mạng tập trung vào việc học cách quản lý, vận hành và bảo trì hệ thống và mạng máy tính. Bạn sẽ học về cài đặt và cấu hình hệ thống, quản lý người dùng, quản lý mạng và bảo mật hệ thống. Khóa học này giúp bạn phát triển kỹ năng quản lý và giám sát hệ thống và mạng hiệu quả.",
-            "studentsCount": "346",
-            "code": "",
-            "exerciseIds": [],
-            "userManagerId": "",
-            "studentIds": []
-        },
-        {
-            "id": 17,
-            "poster": "https://daotaotester.com/wp-content/uploads/2020/08/tester-co-ban-daotao.jpg",
-            "name": "Khóa học Kiểm thử phần mềm",
-            "description": "Khóa học Kiểm thử phần mềm tập trung vào việc học cách đảm bảo chất lượng và độ tin cậy của phần mềm. Bạn sẽ học về các phương pháp kiểm thử, quy trình kiểm thử, công cụ kiểm thử và xác nhận lỗi. Khóa học này giúp bạn trở thành một chuyên gia kiểm thử phần mềm có khả năng tìm ra và sửa lỗi trong quá trình phát triển phần mềm.",
-            "studentsCount": "346",
-            "code": "",
-            "exerciseIds": [],
-            "userManagerId": "",
-            "studentIds": []
-        },
-        {
-            "id": 18,
-            "poster": "https://funix.edu.vn/wp-content/uploads/2022/02/robinawspressimg56613332-16454-2027-8984-1645410539-1.jpg",
-            "name": "Khóa học Đám mây và Dịch vụ Trực tuyến",
-            "description": "Khóa học Đám mây và Dịch vụ Trực tuyến tập trung vào việc hiểu và sử dụng các công nghệ đám mây và dịch vụ trực tuyến như AWS (Amazon Web Services) và Google Cloud Platform. Bạn sẽ học về các khái niệm cơ bản về đám mây, triển khai ứng dụng trên đám mây, quản lý và bảo mật dữ liệu. Khóa học này giúp bạn tận dụng tiềm năng của đám mây và dịch vụ trực tuyến trong việc phát triển và triển khai ứng dụng.",
-            "studentsCount": "346",
-            "code": "",
-            "exerciseIds": [],
-            "userManagerId": "",
-            "studentIds": []
-        },
-        {
-            "id": 19,
-            "poster": "https://www.thienhoang.com.vn/sites/default/files/1.jpg",
-            "name": "Khóa học IoT và Ứng dụng Thông minh",
-            "description": "Khóa học IoT và Ứng dụng Thông minh tập trung vào áp dụng công nghệ IoT để kết nối và tương tác giữa các thiết bị thông minh. Bạn sẽ học về xây dựng và quản lý hệ thống IoT, giao thức và tiêu chuẩn, cũng như phân tích và sử dụng dữ liệu từ các thiết bị thông minh. Khóa học này giúp bạn phát triển ứng dụng và giải pháp thông minh dựa trên IoT, như nhà thông minh, thành phố thông minh và nhiều hơn nữa.",
-            "studentsCount": "346",
-            "code": "",
-            "exerciseIds": [],
-            "userManagerId": "",
-            "studentIds": []
-        },
-        {
-            "id": 20,
-            "poster": "https://i.imgur.com/DJ4aPJV.jpg",
-            "name": "Khóa học Truyền thông và Mạng xã hội",
-            "description": "Khóa học Truyền thông và Mạng xã hội tập trung vào việc hiểu về vai trò của truyền thông và mạng xã hội trong môi trường kỹ thuật số. Bạn sẽ học về cách xây dựng chiến lược truyền thông, quản lý mạng xã hội, tạo nội dung hấp dẫn và phân tích phản hồi từ người dùng. Khóa học này giúp bạn phát triển kỹ năng quảng bá thương hiệu và tương tác hiệu quả với khách hàng thông qua truyền thông và mạng xã hội.",
-            "studentsCount": "346",
-            "code": "",
-            "exerciseIds": [],
-            "userManagerId": "",
-            "studentIds": []
-        },
-        {
-            "id": 21,
-            "poster": "https://files.fullstack.edu.vn/f8-prod/courses/7.png",
-            "name": "Khóa học Công nghệ Ảo hóa",
-            "description": "Khóa học Công nghệ Ảo hóa tập trung vào việc hiểu và áp dụng các công nghệ ảo hóa như máy ảo, môi trường ảo và điều phối tài nguyên. Bạn sẽ học về các công nghệ ảo hóa phổ biến như VMware, Hyper-V và KVM và cách triển khai và quản lý các máy ảo. Khóa học này giúp bạn tận dụng khả năng linh hoạt và tối ưu hóa tài nguyên trong môi trường ảo hóa.",
-            "studentsCount": "346",
-            "code": "",
-            "exerciseIds": [],
-            "userManagerId": "",
-            "studentIds": []
-        },
-        {
-            "id": 22,
-            "poster": "https://files.fullstack.edu.vn/f8-prod/courses/7.png",
-            "name": "Khóa học Quản lý Dữ liệu lớn",
-            "description": "Khóa học Quản lý Dữ liệu lớn tập trung vào việc hiểu và xử lý dữ liệu lớn trong môi trường kỹ thuật số. Bạn sẽ học về cách thu thập, lưu trữ, xử lý và phân tích dữ liệu lớn, cũng như công nghệ và công cụ phổ biến trong lĩnh vực dữ liệu lớn.",
-            "studentsCount": "346",
-            "code": "",
-            "exerciseIds": [],
-            "userManagerId": "",
-            "studentIds": []
+          "id": "6",
+          "name": "Bài tập JSP",
+          "content": "Hoàn thiện ứng dụng Survey và submit",
+          "postDate": "9 thg 3",
+          "dueDate": "09:00 9 thg 3",
+          "author": "Duc Duong",
+          "score": "100"
         }
-    ],
-    "excercises": [
-        {
-            "id": 1,
-            "name": "",
-            "description": "",
-            "type": "",
-            "score": "",
-            "postDate": "",
-            "deadline": ""
-        }
-    ]
+      ],
+      "userManagerId": 11,
+      "studentIds": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "id": 2,
+      "poster": "https://cdn1.edumall.io/640/k-5768aeb1047c995f75fdbf6b/20170817-anhdaidienmoi_thinh/uni03.png",
+      "name": "Khóa học Phân tích và Thiết kế Hệ thống",
+      "description": "Khóa học Phân tích và Thiết kế Hệ thống tập trung vào quá trình phân tích, thiết kế và xây dựng hệ thống thông tin. Bạn sẽ học về phương pháp phân tích yêu cầu, mô hình hóa dữ liệu, quy trình thiết kế hệ thống và cách tạo các biểu đồ luồng công việc. Khóa học sẽ giúp bạn có những kỹ năng cần thiết để phát triển các hệ thống thông tin hiệu quả.",
+      "studentsCount": "235",
+      "code": "",
+      "exerciseIds": [],
+      "userManagerId": "",
+      "studentIds": [
+        11
+      ]
+    },
+    {
+      "id": 3,
+      "poster": "https://zendvn.com/images/coursesOneToOne/Tewq1H9k5l.jpg",
+      "name": "Khóa học Quản trị Cơ sở dữ liệu",
+      "description": "Khóa học Quản trị Cơ sở dữ liệu tập trung vào quản lý và thiết kế cơ sở dữ liệu. Bạn sẽ học về các khái niệm cơ bản của cơ sở dữ liệu, cách thiết kế bảng, truy vấn dữ liệu và tối ưu hóa hiệu suất. Khóa học sẽ giúp bạn hiểu về hệ quản trị cơ sở dữ liệu phổ biến như MySQL hoặc Oracle và sử dụng chúng trong việc xây dựng và quản lý cơ sở dữ liệu.",
+      "studentsCount": "567",
+      "code": "",
+      "exerciseIds": [],
+      "userManagerId": "",
+      "studentIds": []
+    },
+    {
+      "id": 4,
+      "poster": "https://ivolunteervietnam.com/wp-content/uploads/2021/03/83bf45ffc89f4474dff60c40add99791.jpg",
+      "name": "Khóa học Mạng máy tính và An ninh mạng",
+      "description": "Khóa học Mạng máy tính và An ninh mạng tập trung vào các khái niệm cơ bản về mạng máy tính và bảo mật mạng. Bạn sẽ học về cấu trúc mạng, giao thức mạng, quản lý mạng và các biện pháp bảo mật như xác thực, mã hóa và bảo vệ chống lại các cuộc tấn công. Khóa học sẽ giúp bạn có kiến thức cần thiết để thiết kế, cấu hình và bảo vệ các hệ thống mạng.",
+      "studentsCount": "65",
+      "code": "",
+      "exerciseIds": [],
+      "userManagerId": "",
+      "studentIds": [
+        11
+      ]
+    },
+    {
+      "id": 5,
+      "poster": "https://viencongnghethongtin.fbu.edu.vn/wp-content/uploads/sites/4/2021/05/app-1.png",
+      "name": "Khóa học Phát triển Ứng dụng Di động",
+      "description": "Khóa học Phát triển Ứng dụng Di động tập trung vào việc học cách phát triển ứng dụng di động cho các nền tảng như iOS và Android. Bạn sẽ học về ngôn ngữ lập trình và framework như Swift hoặc Kotlin, và cách tạo giao diện người dùng.",
+      "studentsCount": "456",
+      "code": "",
+      "exerciseIds": [],
+      "userManagerId": "",
+      "studentIds": [
+        11,
+        11,
+        11,
+        11,
+        11
+      ]
+    },
+    {
+      "id": 6,
+      "poster": "https://ivolunteervietnam.com/wp-content/uploads/2021/03/077295cd9bab293d38dc7eea122753be.jpg",
+      "name": "Khóa học Trí tuệ nhân tạo",
+      "description": "Khóa học Trí tuệ nhân tạo tập trung vào việc hiểu về trí tuệ nhân tạo và ứng dụng của nó trong lĩnh vực công nghệ thông tin. Bạn sẽ học về các thuật toán và kỹ thuật như học máy, học sâu và xử lý ngôn ngữ tự nhiên. Khóa học này sẽ giúp bạn phát triển khả năng thiết kế và triển khai các hệ thống trí tuệ nhân tạo để giải quyết các vấn đề thực tế.",
+      "studentsCount": "452",
+      "code": "",
+      "exerciseIds": [],
+      "userManagerId": "",
+      "studentIds": []
+    },
+    {
+      "id": 7,
+      "poster": "https://static.ladipage.net/5ea25fb8965dbc32b290b128/multimedia-thumbnail-20210713091745.png",
+      "name": "Khóa học Thiết kế Đồ họa và Đa phương tiện",
+      "description": "Khóa học Thiết kế Đồ họa và Đa phương tiện tập trung vào việc phát triển kỹ năng thiết kế đồ họa và sử dụng các công cụ đa phương tiện. Bạn sẽ học về các phần mềm thiết kế như Adobe Photoshop, Illustrator và Premiere Pro, và cách tạo ra các hình ảnh, biểu đồ, video và âm thanh chất lượng cao. Khóa học này giúp bạn trở thành một người thiết kế đồ họa và đa phương tiện có kỹ năng sáng tạo và công nghệ.",
+      "studentsCount": "124",
+      "code": "",
+      "exerciseIds": [],
+      "userManagerId": "",
+      "studentIds": []
+    },
+    {
+      "id": 8,
+      "poster": "https://files.fullstack.edu.vn/f8-prod/courses/7.png",
+      "name": "Khóa học Quản lý Dự án Công nghệ thông tin",
+      "description": "Khóa học Quản lý Dự án Công nghệ thông tin tập trung vào việc học cách quản lý và điều hành các dự án công nghệ thông tin. Bạn sẽ học về các phương pháp quản lý dự án, lập kế hoạch, kiểm soát nguồn lực và tương tác với các thành viên trong dự án. Khóa học này giúp bạn trở thành một người quản lý dự án có khả năng xử lý các dự án công nghệ thông tin phức tạp và đạt được mục tiêu kỹ thuật và kinh doanh.",
+      "studentsCount": "432",
+      "code": "",
+      "exerciseIds": [],
+      "userManagerId": "",
+      "studentIds": []
+    },
+    {
+      "id": 9,
+      "poster": "https://ivolunteervietnam.com/wp-content/uploads/2021/03/e1daa26afae9e4c7a50c9209e3f8b894.jpg",
+      "name": "Khóa học An toàn thông tin",
+      "description": "Khóa học An toàn thông tin tập trung vào việc bảo vệ và đảm bảo tính bảo mật cho hệ thống thông tin. Bạn sẽ học về các nguyên tắc an toàn thông tin, phân tích rủi ro, phòng chống tấn công mạng, mã hóa và xác thực. Khóa học này giúp bạn có kiến thức cần thiết để đảm bảo an toàn thông tin và bảo vệ các dữ liệu quan trọng trong môi trường công nghệ thông tin",
+      "studentsCount": "112",
+      "code": "",
+      "exerciseIds": [],
+      "userManagerId": "",
+      "studentIds": [
+        11
+      ]
+    },
+    {
+      "id": 10,
+      "poster": "https://m.mic.gov.vn/Upload_Moi/2022_vn02/20220323-ta1.jpeg",
+      "name": "Khóa học Trực tuyến về Công nghệ Blockchain",
+      "description": "Khóa học Trực tuyến về Công nghệ Blockchain tập trung vào việc cung cấp kiến thức về công nghệ Blockchain và ứng dụng của nó. Bạn sẽ học về cách hoạt động của Blockchain, cấu trúc dữ liệu phân tán, các giao thức và các ứng dụng của Blockchain trong lĩnh vực tài chính, chuỗi cung ứng và quản lý dữ liệu. Khóa học này sẽ giúp bạn hiểu và áp dụng công nghệ Blockchain trong các lĩnh vực khác nhau và khám phá tiềm năng sáng tạo của nó.",
+      "studentsCount": "346",
+      "code": "",
+      "exerciseIds": [],
+      "userManagerId": "",
+      "studentIds": [
+        11
+      ]
+    },
+    {
+      "id": 11,
+      "poster": "https://kingmarketing.vn/wp-content/uploads/2022/06/img_60daf5f480a11-1280x720.jpg",
+      "name": "Khóa học Thương mại điện tử",
+      "description": "Khóa học Thương mại điện tử tập trung vào các khía cạnh của việc kinh doanh và giao dịch trực tuyến. Bạn sẽ học về cách xây dựng và quản lý một trang web thương mại điện tử, phát triển chiến lược tiếp thị trực tuyến, xử lý thanh toán và đảm bảo an toàn giao dịch. Khóa học này giúp bạn hiểu và áp dụng các phương pháp thành công trong lĩnh vực thương mại điện tử.",
+      "studentsCount": "346",
+      "code": "",
+      "exerciseIds": [],
+      "userManagerId": "",
+      "studentIds": []
+    },
+    {
+      "id": 12,
+      "poster": "https://files.fullstack.edu.vn/f8-prod/courses/7.png",
+      "name": "Khóa học Quản lý Dự án Phần mềm",
+      "description": "Khóa học Quản lý Dự án Phần mềm tập trung vào việc học cách quản lý và điều hành các dự án phát triển phần mềm. Bạn sẽ học về các phương pháp quản lý dự án, lập kế hoạch, kiểm soát nguồn lực và tương tác với các thành viên trong dự án. Khóa học này giúp bạn trở thành một người quản lý dự án có khả năng xử lý các dự án phần mềm phức tạp và đạt được mục tiêu kỹ thuật và kinh doanh.",
+      "studentsCount": "346",
+      "code": "",
+      "exerciseIds": [],
+      "userManagerId": "",
+      "studentIds": []
+    },
+    {
+      "id": 13,
+      "poster": "https://static.ybox.vn/2021/9/4/1631161138554-Kh%C3%B3a%20h%E1%BB%8Dc%20EXCEL%20Ph%C3%A2n%20T%C3%ADch%20D%E1%BB%AF%20Li%E1%BB%87u%20d%C3%A0nh%20cho%20nh%C3%A2n%20s%E1%BB%B1%20hi%E1%BB%87n%20%C4%91%E1%BA%A1i.png",
+      "name": "Khóa học Phân tích dữ liệu",
+      "description": "Khóa học Phân tích dữ liệu tập trung vào việc nắm bắt và phân tích thông tin từ các nguồn dữ liệu khác nhau. Bạn sẽ học về các phương pháp và công cụ để thu thập, xử lý và phân tích dữ liệu. Khóa học này giúp bạn phát triển khả năng hiểu và tận dụng thông tin từ dữ liệu để đưa ra quyết định thông minh và phân tích xu hướng kinh doanh.",
+      "studentsCount": "346",
+      "code": "",
+      "exerciseIds": [],
+      "userManagerId": "",
+      "studentIds": []
+    },
+    {
+      "id": 14,
+      "poster": "https://hanngutracviet.com/uploads/tai-lieu/2017_09/cntt.jpg",
+      "name": "Khóa học Thực tập Công nghệ thông tin",
+      "description": "Khóa học Thực tập Công nghệ thông tin cung cấp cơ hội cho sinh viên hoặc người mới tốt nghiệp để thực hành và áp dụng kiến thức đã học trong môi trường thực tế. Bạn sẽ có cơ hội làm việc trong một dự án thực tế, hợp tác với các chuyên gia và áp dụng các kỹ năng công nghệ thông tin vào công việc hàng ngày. Khóa học này giúp bạn có kinh nghiệm thực tế và chuẩn bị cho sự nghiệp.",
+      "studentsCount": "346",
+      "code": "",
+      "exerciseIds": [],
+      "userManagerId": "",
+      "studentIds": []
+    },
+    {
+      "id": 15,
+      "poster": "https://files.fullstack.edu.vn/f8-prod/courses/7.png",
+      "name": "Khóa học Hệ điều hành",
+      "description": "Khóa học Hệ điều hành tập trung vào việc hiểu và làm việc với các hệ điều hành như Windows, Linux và macOS. Bạn sẽ học về cấu trúc hệ điều hành, quản lý tài nguyên, quá trình và luồng điều khiển. Khóa học này giúp bạn có kiến thức cơ bản và nâng cao về cách hoạt động và quản lý hệ điều hành.",
+      "studentsCount": "346",
+      "code": "",
+      "exerciseIds": [],
+      "userManagerId": "",
+      "studentIds": []
+    },
+    {
+      "id": 16,
+      "poster": "https://athena.edu.vn/content/uploads/khoa-hoc-quan-tri-mang-co-ban.jpg",
+      "name": "Khóa học Quản lý Hệ thống và Mạng",
+      "description": "Khóa học Quản lý Hệ thống và Mạng tập trung vào việc học cách quản lý, vận hành và bảo trì hệ thống và mạng máy tính. Bạn sẽ học về cài đặt và cấu hình hệ thống, quản lý người dùng, quản lý mạng và bảo mật hệ thống. Khóa học này giúp bạn phát triển kỹ năng quản lý và giám sát hệ thống và mạng hiệu quả.",
+      "studentsCount": "346",
+      "code": "",
+      "exerciseIds": [],
+      "userManagerId": "",
+      "studentIds": []
+    },
+    {
+      "id": 17,
+      "poster": "https://daotaotester.com/wp-content/uploads/2020/08/tester-co-ban-daotao.jpg",
+      "name": "Khóa học Kiểm thử phần mềm",
+      "description": "Khóa học Kiểm thử phần mềm tập trung vào việc học cách đảm bảo chất lượng và độ tin cậy của phần mềm. Bạn sẽ học về các phương pháp kiểm thử, quy trình kiểm thử, công cụ kiểm thử và xác nhận lỗi. Khóa học này giúp bạn trở thành một chuyên gia kiểm thử phần mềm có khả năng tìm ra và sửa lỗi trong quá trình phát triển phần mềm.",
+      "studentsCount": "346",
+      "code": "",
+      "exerciseIds": [],
+      "userManagerId": "",
+      "studentIds": []
+    },
+    {
+      "id": 18,
+      "poster": "https://funix.edu.vn/wp-content/uploads/2022/02/robinawspressimg56613332-16454-2027-8984-1645410539-1.jpg",
+      "name": "Khóa học Đám mây và Dịch vụ Trực tuyến",
+      "description": "Khóa học Đám mây và Dịch vụ Trực tuyến tập trung vào việc hiểu và sử dụng các công nghệ đám mây và dịch vụ trực tuyến như AWS (Amazon Web Services) và Google Cloud Platform. Bạn sẽ học về các khái niệm cơ bản về đám mây, triển khai ứng dụng trên đám mây, quản lý và bảo mật dữ liệu. Khóa học này giúp bạn tận dụng tiềm năng của đám mây và dịch vụ trực tuyến trong việc phát triển và triển khai ứng dụng.",
+      "studentsCount": "346",
+      "code": "",
+      "exerciseIds": [],
+      "userManagerId": "",
+      "studentIds": []
+    },
+    {
+      "id": 19,
+      "poster": "https://www.thienhoang.com.vn/sites/default/files/1.jpg",
+      "name": "Khóa học IoT và Ứng dụng Thông minh",
+      "description": "Khóa học IoT và Ứng dụng Thông minh tập trung vào áp dụng công nghệ IoT để kết nối và tương tác giữa các thiết bị thông minh. Bạn sẽ học về xây dựng và quản lý hệ thống IoT, giao thức và tiêu chuẩn, cũng như phân tích và sử dụng dữ liệu từ các thiết bị thông minh. Khóa học này giúp bạn phát triển ứng dụng và giải pháp thông minh dựa trên IoT, như nhà thông minh, thành phố thông minh và nhiều hơn nữa.",
+      "studentsCount": "346",
+      "code": "",
+      "exerciseIds": [],
+      "userManagerId": "",
+      "studentIds": []
+    },
+    {
+      "id": 20,
+      "poster": "https://i.imgur.com/DJ4aPJV.jpg",
+      "name": "Khóa học Truyền thông và Mạng xã hội",
+      "description": "Khóa học Truyền thông và Mạng xã hội tập trung vào việc hiểu về vai trò của truyền thông và mạng xã hội trong môi trường kỹ thuật số. Bạn sẽ học về cách xây dựng chiến lược truyền thông, quản lý mạng xã hội, tạo nội dung hấp dẫn và phân tích phản hồi từ người dùng. Khóa học này giúp bạn phát triển kỹ năng quảng bá thương hiệu và tương tác hiệu quả với khách hàng thông qua truyền thông và mạng xã hội.",
+      "studentsCount": "346",
+      "code": "",
+      "exerciseIds": [],
+      "userManagerId": "",
+      "studentIds": []
+    },
+    {
+      "id": 21,
+      "poster": "https://files.fullstack.edu.vn/f8-prod/courses/7.png",
+      "name": "Khóa học Công nghệ Ảo hóa",
+      "description": "Khóa học Công nghệ Ảo hóa tập trung vào việc hiểu và áp dụng các công nghệ ảo hóa như máy ảo, môi trường ảo và điều phối tài nguyên. Bạn sẽ học về các công nghệ ảo hóa phổ biến như VMware, Hyper-V và KVM và cách triển khai và quản lý các máy ảo. Khóa học này giúp bạn tận dụng khả năng linh hoạt và tối ưu hóa tài nguyên trong môi trường ảo hóa.",
+      "studentsCount": "346",
+      "code": "",
+      "exerciseIds": [],
+      "userManagerId": "",
+      "studentIds": []
+    },
+    {
+      "id": 22,
+      "poster": "https://files.fullstack.edu.vn/f8-prod/courses/7.png",
+      "name": "Khóa học Quản lý Dữ liệu lớn",
+      "description": "Khóa học Quản lý Dữ liệu lớn tập trung vào việc hiểu và xử lý dữ liệu lớn trong môi trường kỹ thuật số. Bạn sẽ học về cách thu thập, lưu trữ, xử lý và phân tích dữ liệu lớn, cũng như công nghệ và công cụ phổ biến trong lĩnh vực dữ liệu lớn.",
+      "studentsCount": "346",
+      "code": "",
+      "exerciseIds": [],
+      "userManagerId": "",
+      "studentIds": []
+    }
+  ],
+  "privateCourses": [
+    {
+      "id": 1,
+      "poster": "https://funix.edu.vn/wp-content/uploads/2022/02/robinawspressimg56613332-16454-2027-8984-1645410539-1.jpg",
+      "name": "Khóa học Đám mây và Dịch vụ Trực tuyến",
+      "description": "Khóa học Đám mây và Dịch vụ Trực tuyến tập trung vào việc hiểu và sử dụng các công nghệ đám mây và dịch vụ trực tuyến như AWS (Amazon Web Services) và Google Cloud Platform. Bạn sẽ học về các khái niệm cơ bản về đám mây, triển khai ứng dụng trên đám mây, quản lý và bảo mật dữ liệu. Khóa học này giúp bạn tận dụng tiềm năng của đám mây và dịch vụ trực tuyến trong việc phát triển và triển khai ứng dụng.",
+      "studentsCount": "346",
+      "code": "jT9mW2",
+      "exerciseIds": [],
+      "userManagerId": "",
+      "studentIds": []
+    },
+    {
+      "id": 2,
+      "poster": "https://www.thienhoang.com.vn/sites/default/files/1.jpg",
+      "name": "Khóa học IoT và Ứng dụng Thông minh",
+      "description": "Khóa học IoT và Ứng dụng Thông minh tập trung vào áp dụng công nghệ IoT để kết nối và tương tác giữa các thiết bị thông minh. Bạn sẽ học về xây dựng và quản lý hệ thống IoT, giao thức và tiêu chuẩn, cũng như phân tích và sử dụng dữ liệu từ các thiết bị thông minh. Khóa học này giúp bạn phát triển ứng dụng và giải pháp thông minh dựa trên IoT, như nhà thông minh, thành phố thông minh và nhiều hơn nữa.",
+      "studentsCount": "346",
+      "code": "bG7sF4",
+      "exerciseIds": [],
+      "userManagerId": "",
+      "studentIds": []
+    },
+    {
+      "id": 3,
+      "poster": "https://i.imgur.com/DJ4aPJV.jpg",
+      "name": "Khóa học Truyền thông và Mạng xã hội",
+      "description": "Khóa học Truyền thông và Mạng xã hội tập trung vào việc hiểu về vai trò của truyền thông và mạng xã hội trong môi trường kỹ thuật số. Bạn sẽ học về cách xây dựng chiến lược truyền thông, quản lý mạng xã hội, tạo nội dung hấp dẫn và phân tích phản hồi từ người dùng. Khóa học này giúp bạn phát triển kỹ năng quảng bá thương hiệu và tương tác hiệu quả với khách hàng thông qua truyền thông và mạng xã hội.",
+      "studentsCount": "346",
+      "code": "p5RtQ8",
+      "exerciseIds": [],
+      "userManagerId": "",
+      "studentIds": []
+    },
+    {
+      "id": 4,
+      "poster": "https://files.fullstack.edu.vn/f8-prod/courses/7.png",
+      "name": "Khóa học Công nghệ Ảo hóa",
+      "description": "Khóa học Công nghệ Ảo hóa tập trung vào việc hiểu và áp dụng các công nghệ ảo hóa như máy ảo, môi trường ảo và điều phối tài nguyên. Bạn sẽ học về các công nghệ ảo hóa phổ biến như VMware, Hyper-V và KVM và cách triển khai và quản lý các máy ảo. Khóa học này giúp bạn tận dụng khả năng linh hoạt và tối ưu hóa tài nguyên trong môi trường ảo hóa.",
+      "studentsCount": "346",
+      "code": "K2yDf9",
+      "exerciseIds": [],
+      "userManagerId": "",
+      "studentIds": []
+    },
+    {
+      "id": 5,
+      "poster": "https://files.fullstack.edu.vn/f8-prod/courses/7.png",
+      "name": "Khóa học Quản lý Dữ liệu lớn",
+      "description": "Khóa học Quản lý Dữ liệu lớn tập trung vào việc hiểu và xử lý dữ liệu lớn trong môi trường kỹ thuật số. Bạn sẽ học về cách thu thập, lưu trữ, xử lý và phân tích dữ liệu lớn, cũng như công nghệ và công cụ phổ biến trong lĩnh vực dữ liệu lớn.",
+      "studentsCount": "346",
+      "code": "7pC4z9",
+      "exerciseIds": [],
+      "userManagerId": "",
+      "studentIds": []
+    }
+  ],
+  "excercises": [
+    {
+      "id": 1,
+      "name": "",
+      "description": "",
+      "type": "",
+      "score": "",
+      "postDate": "",
+      "deadline": ""
+    }
+  ]
 }

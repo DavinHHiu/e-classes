@@ -1,9 +1,9 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars, faSearch } from '@fortawesome/free-solid-svg-icons';
 import classNames from 'classnames/bind';
 import Tippy from '@tippyjs/react/headless';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars, faSearch } from '@fortawesome/free-solid-svg-icons';
 import { useContext } from 'react';
-import { useLocation } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 import { UserContext } from '~/App';
 import logo from '~/assets/images/e-classes-logo.png';
@@ -28,10 +28,10 @@ function Header() {
                 <div className={cx('more-btn')}>
                     <FontAwesomeIcon icon={faBars} />
                 </div>
-                <div className={cx('logo-container')}>
+                <Link to="/" className={cx('logo-container')}>
                     <img className={cx('logo')} src={logo} alt="logo" />
                     <span className={cx('slogan')}>Eclasses - Learning every moments</span>
-                </div>
+                </Link>
 
                 {location.pathname === '/search' || <Search className={cx('search-container')} />}
 
